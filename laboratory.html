@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio | ESCALIA Site</title>
+    <link rel="stylesheet" href="stylesheets/laboratory_stylesheet.css" />
+    <link rel="stylesheet" href="stylesheets/main_stylesheet.css" />
+    <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
+    <script src="scripts/libaries/scrollreveal.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html">
+            <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="library/logotype_resourses/others/menu.svg" class="menu-icono" alt="" />
+        </label>
+        <ul class="menu">
+            <li class="item">
+                <a class="link" href="index.html">
+                    <button class="header-link">Inicio</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="lingard.html">
+                    <button class="header-link">Docs</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="proyects.html">
+                    <button class="header-link">Proyectos</button></a>
+                <ul class="dropdown">
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Python</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Java</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Javascript</button></a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a class="link" href="institute.html">
+                    <button class="header-link">ITSOEH</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="about.html">
+                    <button class="header-link">Acerca de</button></a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="welcome">
+        <div class="background">
+            <div class="title">
+                <h1>Bienvenido al Panel de Pruebas Beta</h1>
+                <p>Encontraras un monton de cosas divertidad por aqui y proximas implementaciones asi que no dudes pasar
+                    por aqui</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="proximas_implementaciones">
+        <h2>Proximas implementaciones</h2>
+        <p class="explain">¿Hay algo malo? Encontrarás una u otra cosas que vas a notar que no va de acuerdo a lo que
+            describe o que la descripcion es muy erronea, ¡No te preocupes! ya que por el constante cambio nuestro
+            equipo de diseño no le interesa la descripciones y titulos por lo que abundara bastantes errores a la hora
+            de leer, ademas de algunos errores(SOLO BETA) no significa que le escribamos a lo tonto como YandereDEV, por
+            ahora solo prueba nuestros inventos, ¿como funcionan? no lo sabemos XDN'T, solo sabemos que funciona y ya :7
+        </p>
+        <div class="lab-container">
+            <h3>Calculadora de Papus</h3>
+            <div class="content-cal">
+                <div class="calculator">
+                    <div class="buttons">
+                        <h3 class="display" id="display">
+                            0
+                        </h3>
+                        <br>
+                        <button class="btn-calc" onclick="toDisplay('1')">1</button>
+                        <button class="btn-calc" onclick="toDisplay('2')">2</button>
+                        <button class="btn-calc" onclick="toDisplay('3')">3</button>
+                        <button class="btn-calc" onclick="toDisplay('+')">+</button>
+                        <br>
+                        <button class="btn-calc" onclick="toDisplay('4')">4</button>
+                        <button class="btn-calc" onclick="toDisplay('5')">5</button>
+                        <button class="btn-calc" onclick="toDisplay('6')">6</button>
+                        <button class="btn-calc" onclick="toDisplay('-')">-</button>
+                        <br>
+                        <button class="btn-calc" onclick="toDisplay('7')">7</button>
+                        <button class="btn-calc" onclick="toDisplay('8')">8</button>
+                        <button class="btn-calc" onclick="toDisplay('9')">9</button>
+                        <button class="btn-calc" onclick="toDisplay('*')">x</button>
+                        <br>
+                        <button class="btn-calc" onclick="toDisplay('0')">0</button>
+                        <button class="btn-calc" onclick="Limpiar()">C</button>
+                        <button class="btn-calc" onclick="Calcular()">=</button>
+                        <button class="btn-calc" onclick="toDisplay('/')">/</button>
+                    </div>
+                </div>
+
+                <div class="description">
+                    <p>¿Conoces la version de Windows 10? Pues es muy similar</p>
+                    <p>Nueva calculadora con tecnologia de Javascript, por ahora solo incluira campos para el teclado
+                        pero esperamos que en un futuro tu puedas ver los botones como en una calculadora comun y
+                        corriente salvo que por ahora sera una calculadora sin memoria ya que aun no manejaremos el
+                        almacenamiento de variables y base de datos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lab-container">
+            <h3>Espacio de Pruebas de Javascript</h3>
+            <p>Este sera mi arenero para experimentar a lo extenso con javascript por lo que cosas muy locas pasaran por
+                aqui, por ahora solo estara este boton aqui, espero nadie lo presione :0</p>
+                <button class="button" id="javascript-lab">No me Presiones >:V</button>
+        </div>
+
+        <div class="lab-container">
+            <h3>Espacio de Pruebas - Lingard Studios</h3>
+            <p>Sabemos que algunas pruebas necesitan un poco de mas de espacio o queremos no alterar parte de esta
+                seccion, esto es mas para los desarolladores que quieren agregar cosas, pero igual puedes ir tu, puede
+                que haya algo en lo que estemos trabajando</p>
+            <a href="lingard.html">
+                <button class="button">Vamos!</button>
+            </a>
+        </div>
+
+        <div class="lab-container">
+            <h3>Paneles HTML</h3>
+            <p>Preparense para los Problemas, y mas vale que teman, para proteger el mundo de la devastacion , y
+                extender el reino dentro de nuestra nacion, para defender los males de la maldad y el amor, y colocar
+                paneles hasta en la sopa</p>
+            <div class="panel-container" id="container">
+                <div id="panel1">
+                    <h3>Fotografia 1</h3>
+                    <figure class="f_picture">
+                        <img class="picture" src="library/pictures/laboratory/picture1.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="panel2">
+                    <h3>Fotografia 2</h3>
+                    <figure class="f_picture">
+                        <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="panel3">
+                    <h3>Fotografia 3</h3>
+                    <figure class="f_picture">
+                        <img class="picture" src="library/pictures/laboratory/picture3.jpg" alt="">
+                    </figure>
+                </div>
+                <div id="buttons">
+                    <button class="button" id="b-panel1">Panel 1</button>
+                    <button class="button" id="b-panel2">Panel 2</button>
+                    <button class="button" id="b-panel3">Panel 3</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lab-container">
+            <h3>Seccion con Scroll</h3>
+            <p>A continuacion lo que llamo, hacer un seccion scrolleable por que quiero que el div se mantenga en un
+                tamaño grande, que obviamente en la version de celular se va rallar(estropear) por lo que hago esta
+                alternativa</p>
+            <div class="scroll">
+
+            </div>
+        </div>
+
+        <div class="lab-container">
+            <h3>Animaciones de scroll</h3>
+            <p>¿Estas cansado de que tu pagina web se vea vacias y sin animaciones?, Pues aqui te tengo la solucion
+                amigo, lo unico que tienes que hacer es importar la libreria ScrollReveal.js(Asegurate de leer la
+                documentacion) y ahora si amigo preparate para tener unas animaciones bonitas :D</p>
+            <div class="scroll" id="lab-scroll-anim">
+                <figure class="f_picture">
+                    <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="laboratory">
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-lab">
+        <div class="privacy-info">
+            <div class="rules">
+                <ul>
+                    <li>Politicas de Seguridad</li>
+                    <li>Condiciones de Uso</li>
+                    <li>Marcas Registradas</li>
+                </ul>
+            </div>
+            <div class="credits">
+                <p>&copy; ESCALIA 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/laboratory.js"></script>
+</body>
+
+</html>

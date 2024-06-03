@@ -1,0 +1,23 @@
+:root {
+  --escalia-background: #EC0138;
+
+  --dark-background: #151515;
+  --dark-container-background: #212121;
+  --dark-color: #FFFFFF;
+  --dark-button-color: #A4031F;
+
+  --light-background: #FFFFFF;
+  --light-container-background: #DB162F;
+  --light-color: #000000;
+}
+
+.body-dark {
+  background-color: var(--dark-background);
+  color: var(--dark-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.institute-container {
+  background-color: darkred;
+  transition: all 0.5s ease-in-out;
+}
