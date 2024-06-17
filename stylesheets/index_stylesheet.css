@@ -10,7 +10,8 @@
   --light-container-background: #db162f;
   --light-color: #000000;
 
-  --dark-container-border: 1px solid #ec013831;
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
 
 body {
@@ -79,8 +80,7 @@ body {
   text-align: center;
   cursor: default;
   border: var(--dark-container-border);
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: var(--datk-container-shadow);
 }
 
 .card p {
@@ -105,6 +105,7 @@ body {
   display: flex;
   grid-gap: 5px;
   border: var(--dark-container-border);
+  box-shadow: var(--datk-container-shadow);
   background-color: var(--dark-container-background);
   border-radius: 7px;
 }
@@ -136,6 +137,7 @@ body {
   padding: 20px;
   margin: 30px 5%;
   grid-gap: 5px;
+  box-shadow: var(--datk-container-shadow);
   border: var(--dark-container-border);
   border-radius: 7px;
   background-color: var(--dark-container-background);
@@ -261,6 +263,10 @@ body {
   border-radius: 7px;
   font-weight: bold;
   background-color: rgba(250, 101, 250, 0.096);
+}
+
+footer {
+  background-color: var(--dark-background); /* BETA CAN BE DELETED */
 }
 
 @media screen and (min-width: 1400px) {

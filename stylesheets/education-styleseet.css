@@ -1,0 +1,158 @@
+:root {
+  --escalia-background: #ec0138;
+
+  --dark-background: #151515;
+  --dark-container-background: #212121;
+  --dark-color: #ffffff;
+  --dark-button-color: #a4031f;
+
+  --light-background: #ffffff;
+  --light-container-background: #db162f;
+  --light-color: #000000;
+
+  --background-gradient: linear-gradient(120deg, #bc75ff, rgb(255, 119, 176));
+}
+
+body {
+  background-position: center;
+  background-color: var(--dark-background);
+  color: var(--dark-color);
+  height: 10000%;
+}
+
+.code {
+  margin: 2% 1%;
+}
+
+code {
+  padding: 1% 2%;
+  border-radius: 8px;
+  border: 0.5px solid #ffffff27;
+  font-family: "Consolas";
+  background-color: #151515;
+}
+
+code:hover {
+background-color: #15151544;
+}
+
+.button-repo {
+  width: 98%;
+  justify-content: center;
+  padding: 8px 20px;
+  margin: 1%;
+  background-color: transparent;
+  color: pink;
+  font-weight: bold;
+  border: 0.5px solid rgba(255, 192, 203, 0.5);
+  transition: 0.5s;
+}
+
+.button-repo:hover {
+  background-color: pink;
+  color: var(--light-color);
+}
+
+.install-opctions {
+  display: flex;
+}
+
+.logo_title {
+  display: flex;
+  gap: 20px;
+}
+
+.logo_title h1 {
+  font-size: 27px;
+  font-weight: normal;
+  align-content: center;
+}
+
+.content {
+  padding: 70px 1% 1% 1%;
+  display: flex;
+}
+
+.header-link {
+  color: var(--dark-color);
+}
+
+.header-link:hover {
+  color: var(--dark-button-color);
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.sidebar {
+  padding: 1% 0;
+}
+
+.docs-body {
+  
+  width: calc(100% - 200px);
+}
+
+.docs-article {
+  margin: 2% 3%;
+  padding: 3%;
+  border-radius: 3px;
+  background-color: var(--dark-container-background);
+}
+
+.docs-title {
+  margin: 3% 0;
+  text-align: center;
+  align-content: center;
+  font-size: 30px;
+  background: linear-gradient(120deg, #bc75ff, rgb(255, 119, 176));
+  background-size: 1200px 100px;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.docs-menu-link {
+  width: 100%;
+  text-align: left;
+  padding: 7px 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: var(--dark-color);
+}
+
+.sub-sidebar-item {
+  padding-left: 10%;
+}
+
+.docs-menu-link:hover {
+  color: palevioletred;
+  transition: 0.3s linear;
+}
+
+.step {
+  margin: 1% 0;
+}
+@media (max-width: 768px) {
+  .logo_title {
+    gap: 10px;
+  }
+
+  .logo_title h1 {
+    font-size: 22px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .docs-body {
+    width: 100%;
+  }
+}

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="stylesheets/happybitedition_stylesheet.css" />
     <link rel="stylesheet" href="stylesheets/main_stylesheet.css" />
     <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,16 +26,32 @@
         </label>
         <ul class="menu">
             <li class="item">
-                <a class="link" href="proyects.html">
-                    <button class="header-link">Volver</button></a>
-            </li>
-            <li class="item">
                 <a class="link" href="index.html">
                     <button class="header-link">Inicio</button></a>
             </li>
             <li class="item">
-                <a class="link" href="lingard.html">
-                    <button class="header-link">Docs</button></a>
+                <a class="link" href="education.html">
+                    <button class="header-link">Tutoriales</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="proyects.html">
+                    <button class="header-link">Proyectos</button></a>
+                <ul class="dropdown">
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Python</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Java</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Javascript</button></a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a class="link" href="institute.html">
+                    <button class="header-link">ITSOEH</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="laboratory.html">
+                    <button class="header-link">Lab</button></a>
             </li>
             <li class="item">
                 <a class="link" href="about.html">
@@ -39,17 +60,38 @@
         </ul>
     </header>
 
-    <div class="hap_bit_edi-title">
-        <h1>BIENVENIDO A LA COLLECIÓN DE HAPPY BITE</h1>
-        <button class="button">Volver a Proyectos</button>
+    <div class="hcb-welcome-container">
+        <h1>BIENVENIDO A LA COLECCIÓN</h1>
     </div>
 
-    <main class="hap_bit_edi-container">
-        <div>
-            <div>
-                <h2>NOVEDADES</h2>
-                <p>Seccion Abandonada esperando de la Happy Bite Update</p>
+    <section class="hbc-con-container" style="display: flex;">
+        <div class="hbc-con-description">
+            <div class="hbc-con-text">
+                <h2 style="font-size: 30px; margin: 5px 0;">Los Favoritos de Nosotros</h2>
+                <p>21 años alrededor de este mundo, no quiero que siga pasando el tiempo aqui...</p>
             </div>
+        </div>
+        <div></div>
+    </section>
+
+
+
+    <main class="banner">
+        <div class="hbc-ban-title">
+            <p>El Camino Comienza aqui...</p>
+        </div>
+
+        <div class="hbc-container">
+            <div class="decoration"></div>
+            <div>
+                <h2>Hola mundo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolorem doloribus voluptatum cum
+                    excepturi exercitationem magni distinctio cupiditate ullam, delectus animi quidem nemo ex, quod
+                    repellendus autem soluta odit possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam officiis doloremque adipisci laudantium repudiandae commodi id consequatur officia sed
+                    assumenda fugit praesentium quos, vero sapiente soluta. Quod corporis maxime voluptatem.</p>
+            </div>
+            <figure></figure>
         </div>
     </main>
 
@@ -99,7 +141,7 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/hbc.js"></script>
 </body>
 
 </html>

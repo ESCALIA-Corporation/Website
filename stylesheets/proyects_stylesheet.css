@@ -10,7 +10,8 @@
   --light-container-background: #db162f;
   --light-color: #000000;
 
-  --dark-container-border: 1px solid #ec013831;
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
 
 body {
@@ -68,6 +69,7 @@ body {
   gap: 3px;
   background-color: var(--dark-container-background);
   border: var(--dark-container-border);
+  box-shadow: var(--datk-container-shadow);
 }
 
 .slide_picture_container {

@@ -13,7 +13,7 @@ const boton3 = document.getElementById("button_repo_3");
 
 // SET PANEL1 FOR DEFAULT
 panel1.style.display = "block";
-panel2.style.display = "none"; //HIDE PANEL2
+panel2.style.display = "none";
 panel3.style.display = "none";
 
 // IF YOU GO BACK TO PANEL1
