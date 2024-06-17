@@ -1,5 +1,4 @@
 # Welcome to the Oficial Website
-
 ### Now already in the 0.3.6 Summer Edition 2024
 
 lots for ideas awaiting be create in this repository, or not hahaha!
