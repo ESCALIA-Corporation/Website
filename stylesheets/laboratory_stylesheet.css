@@ -1,14 +1,18 @@
 :root {
-  --escalia-background: #EC0138;
+  --escalia-background: #ec0138;
 
   --dark-background: #151515;
   --dark-container-background: #212121;
-  --dark-color: #FFFFFF;
-  --dark-button-color: #A4031F;
+  --dark-color: #ffffff;
+  --dark-button-color: #a4031f;
+  --dark-link-color: #fc99a6;
 
-  --light-background: #FFFFFF;
-  --light-container-background: #DB162F;
+  --light-background: #ffffff;
+  --light-container-background: #db162f;
   --light-color: #000000;
+
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
 
 @keyframes multicolor {
@@ -16,16 +20,16 @@
     color: var(--escalia-background);
   }
   20% {
-    color: #ff99cc;
+    color: #4e0027;
   }
   25% {
-    color: #32c0f4;
+    color: #3235f4;
   }
   50% {
-    color: yellow;
+    color: rgb(146, 146, 0);
   }
   75% {
-    color: #4de854;
+    color: #00c90a;
   }
   100% {
     color: var(--escalia-background);
@@ -52,7 +56,6 @@
 }
 
 .header-link:hover {
-  font-weight: bold;
   color: #fd6585;
 }
 
@@ -67,26 +70,20 @@ body {
   color: var(--light-color);
 }
 
-.welcome {
-  height: 500px;
-}
-
 .background {
-  height: 500px;
+  height: 600px;
   background: linear-gradient(200deg, #22ffb5, #fcfcfc);
-  background-size: 2200px 500px;
+  background-size: 2200px 600px;
   animation: w_multicolor 40s linear infinite;
-}
-
-.welcome .title {
-  padding-top: 200px;
+  align-content: center;
   text-align: center;
 }
 
-.welcome .background .title h1 {
+.background .title h1 {
   animation: multicolor 10s linear infinite;
-  padding: 0 0 5px 0;
-  font-size: 30px;
+  padding: 0 0 7px 0;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
 .proximas_implementaciones {

@@ -5,6 +5,7 @@
   --dark-container-background: #212121;
   --dark-color: #ffffff;
   --dark-button-color: #a4031f;
+  --dark-link-color: #fc99a6;
 
   --light-background: #ffffff;
   --light-container-background: #db162f;
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-image: linear-gradient(180deg, #000000a1, #000000a1),
+  background-image: linear-gradient(180deg, #000000b6,  #000000b6),
     url(../library/pictures/background/index_bg.jpg);
   background-position: center;
   color: var(--dark-color);
@@ -26,7 +27,7 @@ body {
 }
 
 .header-link:hover {
-  color: var(--dark-button-color);
+  color: var(--dark-link-color);
 }
 
 .content {
@@ -35,23 +36,19 @@ body {
 }
 
 .index_title {
-  height: 600px;
+  height: 700px;
+  align-content: center;
+  text-align: center;
 }
 
 .ind_tit-container {
-  padding-top: 250px;
   margin: 0 100px;
-  text-align: center;
 }
 
 .tit-content h1 {
   padding-bottom: 10px;
-  font-size: 34px;
-}
-
-.tit-content h1:hover {
-  color: var(--dark-button-color);
-  transition: 0.5s;
+  font-size: 50px;
+  font-weight: lighter;
 }
 
 .ind_tit-controls {
@@ -101,7 +98,7 @@ body {
 /* PENDING TO EDIT*/
 .longest-cards {
   padding: 20px;
-  margin: 30px 5%;
+  margin: 40px 5%;
   display: flex;
   grid-gap: 5px;
   border: var(--dark-container-border);
@@ -135,7 +132,7 @@ body {
 .escalia-repositories {
   text-align: center;
   padding: 20px;
-  margin: 30px 5%;
+  margin: 40px 5%;
   grid-gap: 5px;
   box-shadow: var(--datk-container-shadow);
   border: var(--dark-container-border);
@@ -259,7 +256,7 @@ body {
 .happy-bite-collection {
   text-align: center;
   padding: 20px;
-  margin: 30px 5%;
+  margin: 40px 5%;
   border-radius: 7px;
   font-weight: bold;
   background-color: rgba(250, 101, 250, 0.096);
@@ -273,7 +270,7 @@ footer {
   .longest-cards,
   .escalia-repositories,
   .happy-bite-collection {
-    margin: 30px 14%;
+    margin: 40px 14%;
   }
 }
 

@@ -1,14 +1,17 @@
 :root {
-  --escalia-background: #EC0138;
+  --escalia-background: #ec0138;
 
   --dark-background: #151515;
   --dark-container-background: #212121;
-  --dark-color: #FFFFFF;
-  --dark-button-color: #A4031F;
+  --dark-color: #ffffff;
+  --dark-button-color: #fc99a6;
 
-  --light-background: #FFFFFF;
-  --light-container-background: #DB162F;
+  --light-background: #ffffff;
+  --light-container-background: #db162f;
   --light-color: #000000;
+
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
 
 .body-light {

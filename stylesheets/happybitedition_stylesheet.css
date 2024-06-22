@@ -5,10 +5,14 @@
   --dark-container-background: #212121;
   --dark-color: #ffffff;
   --dark-button-color: #a4031f;
+  --dark-link-color: #fc99a6;
 
   --light-background: #ffffff;
   --light-container-background: #db162f;
   --light-color: #000000;
+
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
 
   --hbccontainer-backgorund: #0c677ee3;
 }
@@ -32,7 +36,7 @@ header {
 }
 
 .header-link:hover {
-  color: var(--dark-button-color);
+  color: var(--dark-link-color);
 }
 
 .hcb-welcome-container {
