@@ -47,32 +47,32 @@ sr.reveal('.index_title', {
 sr.reveal('.cards-container', {
     duration: 2000,
     origin: 'bottom',
-    distance: '-20px',
+    distance: '30px',
 });
 
 sr.reveal('.longest-cards-container', {
     duration: 2000,
     origin: 'bottom',
-    distance: '-20px',
+    distance: '30px',
 });
 
 sr.reveal('.color-palette', {
     duration: 2000,
     delay: 200,
     origin: 'bottom',
-    distance: '-20px',
+    distance: '30px',
 });
 
 sr.reveal('.escalia-repositories', {
     duration: 2000,
     delay: 200,
     origin: 'bottom',
-    distance: '-20px',
+    distance: '30px',
 });
 
 sr.reveal('.happy-bite-collection', {
     duration: 2000,
     delay: 200,
     origin: 'bottom',
-    distance: '-20px',
+    distance: '30px',
 });

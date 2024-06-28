@@ -11,6 +11,10 @@
   --light-container-background: #db162f;
   --light-color: #000000;
 
+  --hbc-background-base: #02061b;
+  --hbc-border-color: #e169ff;
+  --hbccontainer-backgorund: linear-gradient(110deg, #83f1ff44, #9f8eff42);
+
   --dark-container-border: 0.5px solid #303030;
   --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
@@ -259,11 +263,24 @@ body {
   margin: 40px 5%;
   border-radius: 7px;
   font-weight: bold;
-  background-color: rgba(250, 101, 250, 0.096);
+  color: var(--hbc-border-color);;
+  background-color: var(--hbc-background-base);
+  border: 1px solid var(--hbc-border-color);
+}
+
+#hbc-button {
+  color: var(--hbc-border-color);
+  background-color: var(--hbc-background-base);
+  border: 1px solid var(--hbc-border-color);
+}
+
+#hbc-button:hover {
+  background-color: var(--hbc-border-color);
+  color: var(--hbc-background-base);
 }
 
 footer {
-  background-color: var(--dark-background); /* BETA CAN BE DELETED */
+  background-color: var(--dark-background);
 }
 
 @media screen and (min-width: 1400px) {
@@ -276,8 +293,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .ind_tit-container {
-    padding: 220px 0 0 0;
-    margin: 0 30px;
+    margin: 0 10px;
     text-align: center;
   }
 

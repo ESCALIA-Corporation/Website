@@ -113,9 +113,9 @@ h1 {
 }
 
 .pro_content {
-  margin: 2% 3%;
+  margin: 5% 3%;
   display: flex; /*flex*/
-  gap: 10px;
+  gap: 5px;
 }
 
 .pro_description {
@@ -156,7 +156,7 @@ h1 {
 
 @media screen and (min-width: 1400px) {
   .pro_content {
-    margin: 1% 14%;
+    margin: 5% 14%;
     justify-content: center;
   }
 }

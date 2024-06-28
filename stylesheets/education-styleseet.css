@@ -21,7 +21,6 @@ body {
   background-position: center;
   background-color: var(--dark-background);
   color: var(--dark-color);
-  height: 10000%;
 }
 
 .code {
@@ -111,7 +110,7 @@ background-color: #15151544;
   align-content: center;
   font-size: 30px;
   background: linear-gradient(120deg, #bc75ff, rgb(255, 119, 176));
-  background-size: 1200px 100px;
+  background-size: 1400px 100px;
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

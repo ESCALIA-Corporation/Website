@@ -11,84 +11,52 @@
   --light-container-background: #db162f;
   --light-color: #000000;
 
-  --dark-container-border: 0.5px solid #303030;
-  --datk-container-shadow: #ec013825 0 5px 20px -2px;
-
-  --hbccontainer-backgorund: #0c677ee3;
+  --hbc-background-base: #02061b;
+  --hbc-border-color: #e169ff;
+  --hbccontainer-backgorund: linear-gradient(110deg, #83f1ff44, #9f8eff42);
 }
 
 body {
   /*background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
     url(../library/pictures/background/index_bg.jpg);
     */
-  background-color: var(--light-background);
+  background-color: var(--hbc-background-base);
   background-position: center;
-  color: var(--light-color);
-  font-family: "Lato", "Centuryu Gothic", sans-serif;
+  color: var(--dark-color);
 }
 
 header {
-  border-bottom: 1.5px solid var(--escalia-background);
-}
-
-.header-link {
-  color: var(--light-color);
-}
+  border-bottom: 1.5px solid #83f1ff;
+} 
 
 .header-link:hover {
   color: var(--dark-link-color);
 }
 
 .hcb-welcome-container {
-  height: 600px;
-  align-content: center;
+  background: linear-gradient(180deg, #83f1ff, #02061b 80%);
+  background-size: 2400px 700px;
+  color: var(--hbc-background-base);
+  height: 700px;
   padding: calc(60px + 2%) 0 2% 0;
-  width: 100%;
+  align-content: center;
   text-align: center;
 }
 
 h1 {
-  font-size: 45px;
-  font-family: "Lato";
+  font-size: 50px;
+  font-family: 'Century Gothic';
+  font-weight: lighter;
+  background: linear-gradient(120deg, #a949f7, #fc559a);
+  background-size: 2000px 100px;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-/* Animation */
-@keyframes scroll {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translateX(0);
-  }
-
-  50% {
-    -webkit-transform: translate(-30px);
-    transform: translateX(-30px);
-  }
-
-  100% {
-    -webkit-transform: translate(0);
-    transform: translateX(0);
-  }
-}
-
-.hbc-con-container {
-    --s: 64px; /* control the size*/
-    --c1: #000000;
-    --c2: var(--hbccontainer-backgorund);
-    
-    --_g: 
-       var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
-       var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
-    background:
-      radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-      radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-      var(--c1);
-    background-size: var(--s) var(--s);
-}
-
 
 .hbc-con-description {
   width: 65%;
-  padding: 10% 5%;
+  padding: 8% 5%;
   background-color: var(--light-background);
   position: relative;
   /*box-shadow: #d11bff57 0 10px 50px -3px;*/
@@ -104,7 +72,6 @@ h1 {
   height: 100%;
   color: var(--dark-color);
   z-index: 1;
-  background-color: var(--hbccontainer-backgorund);
   /*backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(60px);
   */
@@ -116,10 +83,10 @@ h1 {
 }
 
 .banner  {
-  background-color: #dd57ff63;
+  color: var(--dark-color);
   width: 100%;
   margin: 0;
-  padding: 2% 3%;
+  padding: 0.5% 6%;
 }
 
 .hbc-ban-title {
@@ -134,16 +101,11 @@ h1 {
   display: flex;
 }
 
-.hbc-container > .decoration {
-  padding: 0;
-  width: 7px;
-  background-color: #000;
-}
-
-.hbc-container > div {
+.hbc-container > .hbc-description {
+  background: linear-gradient(110deg, #83f1ff44, #9f8eff42);
   width: 65%;
   padding: 2%;
-  text-align: center;
+  border: 1px solid #e169ff;
 }
 
 .hbc-container div > h2 {
@@ -153,6 +115,10 @@ h1 {
 .hbc-container > figure {
   width: 35%;
   padding: 2%;
+}
+
+
+@media screen and (min-width: 1400px) {
 }
 
 @media screen and (max-width: 800px) {

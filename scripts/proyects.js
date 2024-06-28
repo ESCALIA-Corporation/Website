@@ -1,14 +1,14 @@
 window.sr = ScrollReveal();
 
-// FIXME: Fix in vmobile version crash the reoluction with the slide animations
-sr.reveal('.pro_picture1', {
+sr.reveal('.pro_picture', {
     duration: 2000,
-    origin: 'right',
+    origin: 'bottom',
     distance: '200px'
 });
 
-sr.reveal('.pro_picture2', {
+sr.reveal('.pro_description', {
     duration: 2000,
-    origin: 'left',
-    distance: '200px'
+    origin: 'bottom',
+    distance: '200px',
+    delay: 1000,
 });
