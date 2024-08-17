@@ -1,16 +1,4 @@
 :root {
-  --escalia-background: #ec0138;
-
-  --dark-background: #151515;
-  --dark-container-background: #212121;
-  --dark-color: #ffffff;
-  --dark-button-color: #a4031f;
-  --dark-link-color: #fc99a6;
-
-  --light-background: #ffffff;
-  --light-container-background: #db162f;
-  --light-color: #000000;
-
   --hbc-background-base: #02061b;
   --hbc-border-color: #e169ff;
   --hbccontainer-backgorund: linear-gradient(110deg, #83f1ff44, #9f8eff42);

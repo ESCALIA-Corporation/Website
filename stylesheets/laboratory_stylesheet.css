@@ -1,16 +1,4 @@
 :root {
-  --escalia-background: #ec0138;
-
-  --dark-background: #151515;
-  --dark-container-background: #212121;
-  --dark-color: #ffffff;
-  --dark-button-color: #a4031f;
-  --dark-link-color: #fc99a6;
-
-  --light-background: #ffffff;
-  --light-container-background: #db162f;
-  --light-color: #000000;
-
   --dark-container-border: 0.5px solid #303030;
   --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
@@ -36,20 +24,20 @@
   }
 }
 
-  @keyframes w_multicolor {
-    0% {
-      background-position: 0% 50%;
-    }
-    25% {
-      background-position: 50% 100%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    75% {
-      background-position: 50% 0%;
-    }
+@keyframes w_multicolor {
+  0% {
+    background-position: 0% 50%;
   }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+}
 
 .header-link {
   color: #252525;
@@ -61,7 +49,6 @@
 
 .menu-icono {
   fill: #000000 !important;
-
 }
 
 body {

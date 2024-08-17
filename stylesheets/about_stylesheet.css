@@ -1,16 +1,4 @@
 :root {
-  --escalia-background: #ec0138;
-
-  --dark-background: #151515;
-  --dark-container-background: #212121;
-  --dark-color: #ffffff;
-  --dark-button-color: #a4031f;
-  --dark-link-color: #fc99a6;
-
-  --light-background: #ffffff;
-  --light-container-background: #db162f;
-  --light-color: #000000;
-
   --dark-container-border: 0.5px solid #303030;
   --datk-container-shadow: #ec013825 0 5px 20px -2px;
 }
@@ -54,13 +42,13 @@ body {
 }
 
 #version-data {
-  font-weight: bolder;
-  font-size: 18px;
-  background: linear-gradient(120deg, #ff60ea, rgb(85, 250, 201));
-  background-size: 400px 100px;
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding: 7px 14px;
+  font-size: 15px;
+  background: linear-gradient(120deg, #7d15c240, #55fac940);
+  background-size: 450px 100px;
+  color: var(--dark-color);
+  border: 1px solid #ffffff31;
+  border-radius: 30px;
 }
 
 .con_tit_escalia {
@@ -91,7 +79,7 @@ body {
 .member_container {
   display: flex;
   margin: 2% 0;
-  gap: 20px;
+  gap: 15px;
 }
 
 .profile-photo-container {
@@ -116,11 +104,11 @@ body {
   margin: 20px 10px;
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 
 .link-logo {
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
