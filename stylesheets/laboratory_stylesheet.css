@@ -59,6 +59,11 @@
   color: #fd6585;
 }
 
+.menu-icono {
+  fill: #000000 !important;
+
+}
+
 body {
   height: 145vh;
   position: relative;
