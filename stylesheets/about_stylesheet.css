@@ -41,16 +41,6 @@ body {
   padding: 30px;
 }
 
-#version-data {
-  padding: 7px 14px;
-  font-size: 15px;
-  background: linear-gradient(120deg, #7d15c240, #55fac940);
-  background-size: 450px 100px;
-  color: var(--dark-color);
-  border: 1px solid #ffffff31;
-  border-radius: 30px;
-}
-
 .con_tit_escalia {
   display: flex;
   justify-content: center;

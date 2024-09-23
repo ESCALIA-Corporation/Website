@@ -24,7 +24,7 @@ code {
 }
 
 code:hover {
-background-color: #15151544;
+  background-color: #15151544;
 }
 
 .button-repo {
@@ -87,8 +87,7 @@ background-color: #15151544;
 .docs-article {
   margin: 2% 3%;
   padding: 3%;
-  border-radius: 3px;
-  background-color: var(--dark-container-background);
+  border-radius: 8px;
 }
 
 .docs-title {
@@ -117,14 +116,75 @@ background-color: #15151544;
   padding-left: 10%;
 }
 
-.docs-menu-link:hover {
+.active {
+  color: palevioletred;
+}
+
+.docs-menu-link:hover  {
   color: palevioletred;
   transition: 0.3s linear;
+}
+
+.docs-menu {
+text-align: center;
+}
+
+.docs-menu > div {
+  margin: 20px;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.menu-button {
+  padding: 40px 30px;
+  font-size: 15px;
+  background: linear-gradient(200deg, #1b009236, #0011ff36);
+  border: var(--dark-container-border);
+  color: var(--dark-color);
+}
+.menu-button:hover {
+  background-color: #4042b927;
+  transition: 0.3s;
+}
+
+.article {
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  border: var(--dark-container-border);
+}
+
+.article > .content-article {
+  width: 90%;
+}
+
+.article > .controls {
+  width: 10%;
+  text-align: center;
+  align-content: center;
 }
 
 .step {
   margin: 1% 0;
 }
+
+footer {
+  --s: 77px; /* control the size*/
+  --c1: #310013;
+  --c2: #151515;
+
+  --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
+    var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
+    var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
+  background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+    radial-gradient(50% 50% at 0 100%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
+      var(--c1);
+  background-size: var(--s) var(--s);
+}
+
 @media (max-width: 768px) {
   .logo_title {
     gap: 10px;
@@ -144,5 +204,11 @@ background-color: #15151544;
 
   .docs-body {
     width: 100%;
+  }
+
+  .docs-menu > div {
+    margin: 10px 0;
+    justify-content: center;
+    display: inline;
   }
 }

@@ -15,11 +15,14 @@ body {
 }
 
 .container {
-  margin: 40px 5%;
+  margin: 50px 5%;
+  border-radius: var(--global-container-border);
+}
+
+.container-style {
   border: var(--dark-container-border);
   box-shadow: var(--datk-container-shadow);
   background-color: var(--dark-container-background);
-  border-radius: var(--global-container-border);
 }
 
 .header-link {
@@ -95,6 +98,13 @@ body {
   border-radius: var(--global-container-border);
 }
 
+.long-card > figure {
+  width: 40%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
 .long-card-picture {
   width: 200px;
 }
@@ -108,27 +118,23 @@ body {
   padding: 10px 0;
 }
 
-.pro_slides_container {
-  margin: 1% 0;
-  padding: 0 5px;
+.proyects-cards-container {
   display: flex;
-  overflow-x: scroll;
-  gap: 2px;
+  margin: 10px 0;
+  gap: 15px;
 }
 
-.pro_slide {
+.proyect-card {
   display: flex;
-  align-items: center;
-  margin: 10px;
-  padding: 1%;
-  width: 32%;
-  min-width: 32%;
-  border-radius: 5px;
-  font-weight: 15px;
-  gap: 3px;
-  background-color: var(--dark-container-background);
+  padding: 20px 10px;
+  width: 49%;
+  gap: 5px;
   border: var(--dark-container-border);
-  box-shadow: var(--datk-container-shadow);
+  border-radius: var(--global-container-border);
+}
+
+.tags-container {
+  padding: 0 0 15px 0;
 }
 
 .slide_picture_container {
@@ -199,11 +205,9 @@ body {
   text-align: center;
   padding: 20px;
   margin: 40px 5%;
-  border-radius: 7px;
-  font-weight: bold;
   color: var(--hbc-border-color);
   background-color: var(--hbc-background-base);
-  border: 1px solid var(--hbc-border-color);
+  border: 0.5px solid var(--hbc-border-color);
 }
 
 #hbc-button {
@@ -224,7 +228,7 @@ footer {
 @media screen and (min-width: 1400px) {
   .happy-bite-collection,
   .container {
-    margin: 40px 14%;
+    margin: 50px 14%;
   }
 }
 
@@ -254,17 +258,13 @@ footer {
     justify-content: center;
   }
 
-  .pro_slides_container {
-    margin: 1% 0;
-    display: block;
-    overflow-x: hidden;
-  }
+  .proyects-cards-container {
+    display: inline;
 
-  .pro_slide {
-    margin: 1%;
-    padding: 1%;
-    width: 98%;
-    background-color: transparent;
-    box-shadow: none;
+  }
+  
+  .proyect-card {
+    margin: 10px 25px;
+    width: auto;
   }
 }

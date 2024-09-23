@@ -11,7 +11,7 @@
   --escalia-background: #ec0138;
 
   --dark-background: #151515;
-  --dark-container-background: #212121;
+  --dark-container-background: #191919;
   --dark-color: #ffffff;
   --dark-button-color: #a4031f;
   --dark-link-color: #fc99a6;
@@ -145,6 +145,17 @@ button.button {
   border: 1px solid var(--dark-button-color);
   font-size: 14px;
   padding: 8px 25px;
+}
+
+.tag {
+  padding: 7px 14px;
+  font-size: 13px;
+  background-color: #190529;
+  /*background: linear-gradient(120deg, #3800667a, #3800667a);*/
+  background-size: 450px 100px;
+  color: #ff87ab;
+  border: 1px solid #ffffff25;
+  border-radius: 30px;
 }
 
 .button:hover {
