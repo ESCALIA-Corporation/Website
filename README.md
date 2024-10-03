@@ -13,11 +13,9 @@ this features will be added slowly in the next verision, when? i don´t know
 
 ## You want see in a docker environment? 
 
-- Latest version here
+Soon avaliable in docker machine
 
-**https://hub.docker.com/repository/docker/beofalejandro/flaskapp/general**
-
-## 
+## Uncomming in the next version
 
 if you have a suggestion or idea to the site to share with us, create a new issue or create a discussion in this repository, thanks for whatch
 

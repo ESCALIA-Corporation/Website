@@ -1,17 +1,23 @@
 :root {
   --hbc-background-base: #02061b;
   --hbc-border-color: #e169ff;
-  --hbccontainer-backgorund: linear-gradient(110deg, #83f1ff44, #9f8eff42);
+  --hbc-container-backgorund: linear-gradient(110deg, #17505244, #2f266142);
 
   --dark-container-border: 0.5px solid #303030;
   --global-container-border: 5px;
 }
 
-body {
-  background-image: linear-gradient(180deg, #000000c4, #000000c4),
-    url(../library/pictures/background/index_bg.jpg);
-  background-position: center;
+.mode {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: bold;
   color: var(--dark-color);
+}
+
+body {
+  color: var(--dark-color);
+  background-color: var(--dark-container-background);
 }
 
 .container {
@@ -34,13 +40,14 @@ body {
 }
 
 .content {
-  background-color: var(--dark-background);
-  padding: 15px 0;
+  padding: 15px 0;  
 }
 
 .title {
+  background: linear-gradient(180deg, #000000de 1%, #0000009a),
+    url(/library/pictures/background/index_bg.jpg);
   height: 700px;
-  margin: 0 100px;
+  padding: 0 100px;
   align-content: center;
   text-align: center;
 }
@@ -57,11 +64,6 @@ body {
   justify-content: center;
 }
 
-.cards h2 {
-  padding: 10px 0;
-  text-align: center;
-}
-
 .cards-container {
   text-align: center;
   padding: 10px 0;
@@ -72,12 +74,10 @@ body {
   padding: 0 0 15px 0;
   width: 270px;
   display: inline-block;
-  background-color: var(--dark-container-background);
   border-radius: var(--global-container-border);
   text-align: center;
   cursor: default;
   border: var(--dark-container-border);
-  box-shadow: var(--datk-container-shadow);
 }
 
 .card p {
@@ -87,7 +87,7 @@ body {
 
 .card-picture {
   padding: 0 0 15px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 5px 5px 0 0;
   width: 100%;
 }
 
@@ -99,17 +99,18 @@ body {
 }
 
 .long-card > figure {
-  width: 40%;
+  width: 35%;
   text-align: center;
   align-content: center;
   align-items: center;
 }
 
 .long-card-picture {
-  width: 200px;
+  width: 170px;
 }
 
 .long-card > div {
+  width: 65%;
   padding: 1%;
   align-content: center;
 }
@@ -205,8 +206,8 @@ body {
   text-align: center;
   padding: 20px;
   margin: 40px 5%;
-  color: var(--hbc-border-color);
-  background-color: var(--hbc-background-base);
+  color: var(--dark-color);
+  background: var(--hbc-container-backgorund);
   border: 0.5px solid var(--hbc-border-color);
 }
 
@@ -221,12 +222,32 @@ body {
   color: var(--hbc-background-base);
 }
 
-footer {
-  background-color: var(--dark-background);
+.learning > h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.article {
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  border: var(--dark-container-border);
+}
+
+.article > .content-article {
+  width: 90%;
+}
+
+.article > .controls {
+  width: 10%;
+  text-align: center;
+  align-content: center;
 }
 
 @media screen and (min-width: 1400px) {
+  .cards-container,
   .happy-bite-collection,
+  .learning,
   .container {
     margin: 50px 14%;
   }
@@ -234,7 +255,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .title {
-    margin: 0 10px;
+    padding: 0 10px;
     text-align: center;
   }
 
@@ -247,7 +268,6 @@ footer {
   }
 
   .long-card {
-    margin: 10px 25px;
     height: auto;
     display: inline-block;
   }
@@ -258,13 +278,34 @@ footer {
     justify-content: center;
   }
 
+  .long-card > div {
+    width: 100%;
+  }
+
   .proyects-cards-container {
     display: inline;
-
   }
-  
+
   .proyect-card {
     margin: 10px 25px;
     width: auto;
+  }
+
+  .learning {
+    margin: 10px 25px;
+  }
+
+  .article {
+    display: inline;
+    width: 100%;
+    text-align: center;
+  }
+
+  .article > .content-article {
+    width: 100%;
+  }
+  
+  .article > .controls {
+    width: 100%;
   }
 }

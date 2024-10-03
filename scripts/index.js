@@ -1,5 +1,8 @@
 window.sr = ScrollReveal();
 
+// TODO: Hacer que cambie de tema como en el apartado de instituto
+
+
 // PANELS WITH JS
 const contenedor = document.getElementById("repositories-container"); //GET THE CONATINER FOR PANELS
 // SET THE DIV's

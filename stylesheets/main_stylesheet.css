@@ -138,13 +138,19 @@ label {
 }
 
 button.button {
-  background-color: transparent;
-  color: var(--dark-color);
   margin: 3px;
+  padding: 7px 20px;
   cursor: pointer;
-  border: 1px solid var(--dark-button-color);
+  border: 0.5px solid #464646;
+  color: var(--dark-color);
+  background-color: transparent;
   font-size: 14px;
-  padding: 8px 25px;
+}
+
+.button:hover {
+  border: 0.5px solid var(--dark-button-color);
+  color: var(--dark-button-color);
+  transition: 0.4s;
 }
 
 .tag {
@@ -156,11 +162,6 @@ button.button {
   color: #ff87ab;
   border: 1px solid #ffffff25;
   border-radius: 30px;
-}
-
-.button:hover {
-  background-color: var(--dark-button-color);
-  transition: 0.3s;
 }
 
 /* --- FOOTER ATRIBUTES --- */
