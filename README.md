@@ -13,6 +13,8 @@ this features will be added slowly in the next verision, when? i don´t know
 
 ## You want see in a docker environment? 
 
+avaliable using the following command: docker push beofalejandro/flaskapp:tagname
+
 Soon avaliable in docker machine
 
 ## Uncomming in the next version
