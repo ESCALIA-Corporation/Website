@@ -1,0 +1,166 @@
+:root {
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
+}
+
+:root, [data-theme="dark"] {
+  --title-background-up: #000000de;
+  --title-background-down: #0000009a;
+}
+
+[data-theme="light"] {
+  --title-background-up: #c7c5c5b4;
+  --title-background-down: #cac8c870;
+}
+
+body {
+  background-image: linear-gradient(180deg, var(--title-background-up) 0%, var(--title-background-down) 100%),
+    url(../library/pictures/background/about_bg.jpg);
+  background-position: center;
+  background-color: var(--background);
+  color: var(--color);
+}
+
+@keyframes w_multicolor {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+}
+
+.header-link {
+  color: var(--link-color);
+}
+
+.header-link:hover {
+  color: var(--link-color-hover);
+}
+
+.about-container {
+  border-radius: 5px;
+  background-color: var(--background);
+  margin: 4%;
+  padding: 30px;
+}
+
+.con_tit_escalia {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+#title {
+  padding: 15px 10px 15px 15px;
+}
+
+#escalia_title {
+  padding: 15px;
+  background-color: var(--escalia-background);
+  color: var(--container-background);
+}
+
+.workgroup-escalia {
+  display: flex;
+  gap: 10px;
+}
+
+.workgroup-escalia > div {
+  width: 50%;
+}
+
+.member_container {
+  display: flex;
+  margin: 2% 0;
+  gap: 15px;
+}
+
+.profile-photo-container {
+  width: 180px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  align-items: center;
+  align-content: center;
+}
+
+.media-links {
+  margin: 20px 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.link-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.version-info-content {
+  background-color: var(--container-background);
+  margin: 2% 0;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.version-info-content h2 {
+  font-weight: bolder;
+  background: linear-gradient(120deg, #992bff, rgb(255, 59, 140));
+  background-size: 400px 100px;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.version-info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ver-inf-commit-container {
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 800px) {
+  .about-container {
+    margin: 0;
+    padding: 70px 3% 3% 3%;
+  }
+
+  .profile-photo-container {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .member_container {
+    display: inline-block;
+    margin: 4% 0;
+  }
+
+  .workgroup-escalia {
+    display: inline;
+  }
+
+  .workgroup-escalia > div {
+    width: 100%;
+  }
+}

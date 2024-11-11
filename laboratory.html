@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="#" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio | ESCALIA Site</title>
-    <link rel="stylesheet" href="stylesheets/laboratory_stylesheet.css" />
-    <link rel="stylesheet" href="stylesheets/main_stylesheet.css" />
+    <link rel="stylesheet" href="stylesheets/laboratory.css" />
+    <link rel="stylesheet" href="stylesheets/template.css" />
     <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
                     <button class="header-link">Tutoriales</button></a>
             </li>
             <li class="item">
-                <a class="link" href="proyects.html">
+                <a class="link" href="projects.html">
                     <button class="header-link">Proyectos</button></a>
                 <ul class="dropdown">
                     <li><a class="link" href="#">
@@ -45,8 +45,8 @@
                 </ul>
             </li>
             <li class="item">
-                <a class="link" href="institute.html">
-                    <button class="header-link">Instituto</button></a>
+                <a class="link" href="products.html">
+                    <button class="header-link">Productos</button></a>
             </li>
             <li class="item">
                 <a class="link" href="about.html">
@@ -58,8 +58,7 @@
     <section class="background">
         <div class="title">
             <h1>BIENVENIDO A LA ZONA DE PRUEBAS</h1>
-            <p>Encontraras un monton de cosas divertidad por aqui y proximas implementaciones asi que no dudes pasar
-                por aqui</p>
+            <p>Espacio de pruebas dedicado para experimentar en la pagina</p>
         </div>
     </section>
 
@@ -71,117 +70,105 @@
             de leer, ademas de algunos errores(SOLO BETA) no significa que le escribamos a lo tonto como YandereDEV, por
             ahora solo prueba nuestros inventos, ¿como funcionan? no lo sabemos XDN'T, solo sabemos que funciona y ya :7
         </p>
-        <div class="lab-container">
-            <h3>Calculadora de Papus</h3>
-            <div class="content-cal">
-                <div class="calculator">
-                    <div class="buttons">
-                        <h3 class="display" id="display">
-                            0
-                        </h3>
-                        <br>
-                        <button class="btn-calc" onclick="toDisplay('1')">1</button>
-                        <button class="btn-calc" onclick="toDisplay('2')">2</button>
-                        <button class="btn-calc" onclick="toDisplay('3')">3</button>
-                        <button class="btn-calc" onclick="toDisplay('+')">+</button>
-                        <br>
-                        <button class="btn-calc" onclick="toDisplay('4')">4</button>
-                        <button class="btn-calc" onclick="toDisplay('5')">5</button>
-                        <button class="btn-calc" onclick="toDisplay('6')">6</button>
-                        <button class="btn-calc" onclick="toDisplay('-')">-</button>
-                        <br>
-                        <button class="btn-calc" onclick="toDisplay('7')">7</button>
-                        <button class="btn-calc" onclick="toDisplay('8')">8</button>
-                        <button class="btn-calc" onclick="toDisplay('9')">9</button>
-                        <button class="btn-calc" onclick="toDisplay('*')">x</button>
-                        <br>
-                        <button class="btn-calc" onclick="toDisplay('0')">0</button>
-                        <button class="btn-calc" onclick="Limpiar()">C</button>
-                        <button class="btn-calc" onclick="Calcular()">=</button>
-                        <button class="btn-calc" onclick="toDisplay('/')">/</button>
+
+        <section class="lab-main-container">
+            <div class="lab-container">
+                <h3>Calculadora de Papus</h3>
+                <div class="content-cal">
+                    <div class="calculator">
+                        <div class="buttons">
+                            <h3 class="display" id="display">
+                                0
+                            </h3>
+                            <br>
+                            <button class="btn-calc" onclick="toDisplay('1')">1</button>
+                            <button class="btn-calc" onclick="toDisplay('2')">2</button>
+                            <button class="btn-calc" onclick="toDisplay('3')">3</button>
+                            <button class="btn-calc" onclick="toDisplay('+')">+</button>
+                            <br>
+                            <button class="btn-calc" onclick="toDisplay('4')">4</button>
+                            <button class="btn-calc" onclick="toDisplay('5')">5</button>
+                            <button class="btn-calc" onclick="toDisplay('6')">6</button>
+                            <button class="btn-calc" onclick="toDisplay('-')">-</button>
+                            <br>
+                            <button class="btn-calc" onclick="toDisplay('7')">7</button>
+                            <button class="btn-calc" onclick="toDisplay('8')">8</button>
+                            <button class="btn-calc" onclick="toDisplay('9')">9</button>
+                            <button class="btn-calc" onclick="toDisplay('*')">x</button>
+                            <br>
+                            <button class="btn-calc" onclick="toDisplay('0')">0</button>
+                            <button class="btn-calc" onclick="Limpiar()">C</button>
+                            <button class="btn-calc" onclick="Calcular()">=</button>
+                            <button class="btn-calc" onclick="toDisplay('/')">/</button>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <p>¿Conoces la version de Windows 10? Pues es muy similar</p>
+                        <p>Nueva calculadora con tecnologia de Javascript, por ahora solo incluira campos para el
+                            teclado
+                            pero esperamos que en un futuro tu puedas ver los botones como en una calculadora comun y
+                            corriente salvo que por ahora sera una calculadora sin memoria ya que aun no manejaremos el
+                            almacenamiento de variables y base de datos</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="description">
-                    <p>¿Conoces la version de Windows 10? Pues es muy similar</p>
-                    <p>Nueva calculadora con tecnologia de Javascript, por ahora solo incluira campos para el teclado
-                        pero esperamos que en un futuro tu puedas ver los botones como en una calculadora comun y
-                        corriente salvo que por ahora sera una calculadora sin memoria ya que aun no manejaremos el
-                        almacenamiento de variables y base de datos</p>
+            <div class="lab-container">
+                <h3>Espacio de Pruebas de Javascript</h3>
+                <p>Este sera mi arenero para experimentar a lo extenso con javascript por lo que cosas muy locas pasaran
+                    por
+                    aqui, por ahora solo estara este boton aqui, espero nadie lo presione :0</p>
+                <button class="button" id="javascript-lab">No me Presiones >:V</button>
+            </div>
+        </section>
+
+        <section class="lab-main-container">
+            <div class="lab-container">
+                <h3>Paneles HTML</h3>
+                <p>Preparense para los Problemas, y mas vale que teman, para proteger el mundo de la devastacion , y
+                    extender el reino dentro de nuestra nacion, para defender los males de la maldad y el amor, y
+                    colocar
+                    paneles hasta en la sopa</p>
+                <div class="panel-container" id="container">
+                    <div id="panel1">
+                        <h3>Fotografia 1</h3>
+                        <figure class="f_picture">
+                            <img class="picture" src="library/pictures/laboratory/picture1.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div id="panel2">
+                        <h3>Fotografia 2</h3>
+                        <figure class="f_picture">
+                            <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div id="panel3">
+                        <h3>Fotografia 3</h3>
+                        <figure class="f_picture">
+                            <img class="picture" src="library/pictures/laboratory/picture3.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div id="buttons">
+                        <button class="button" id="b-panel1">Panel 1</button>
+                        <button class="button" id="b-panel2">Panel 2</button>
+                        <button class="button" id="b-panel3">Panel 3</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="lab-container">
-            <h3>Espacio de Pruebas de Javascript</h3>
-            <p>Este sera mi arenero para experimentar a lo extenso con javascript por lo que cosas muy locas pasaran por
-                aqui, por ahora solo estara este boton aqui, espero nadie lo presione :0</p>
-            <button class="button" id="javascript-lab">No me Presiones >:V</button>
-        </div>
-
-        <div class="lab-container">
-            <h3>Espacio de Pruebas - Lingard Studios</h3>
-            <p>Sabemos que algunas pruebas necesitan un poco de mas de espacio o queremos no alterar parte de esta
-                seccion, esto es mas para los desarolladores que quieren agregar cosas, pero igual puedes ir tu, puede
-                que haya algo en lo que estemos trabajando</p>
-            <a href="">
-                <button class="button">Vamos!</button>
-            </a>
-        </div>
-
-        <div class="lab-container">
-            <h3>Paneles HTML</h3>
-            <p>Preparense para los Problemas, y mas vale que teman, para proteger el mundo de la devastacion , y
-                extender el reino dentro de nuestra nacion, para defender los males de la maldad y el amor, y colocar
-                paneles hasta en la sopa</p>
-            <div class="panel-container" id="container">
-                <div id="panel1">
-                    <h3>Fotografia 1</h3>
-                    <figure class="f_picture">
-                        <img class="picture" src="library/pictures/laboratory/picture1.jpg" alt="">
+            <div class="lab-container">
+                <h3>Animaciones de scroll</h3>
+                <p>¿Estas cansado de que tu pagina web se vea vacias y sin animaciones?, Pues aqui te tengo la solucion
+                    amigo, lo unico que tienes que hacer es importar la libreria ScrollReveal.js(Asegurate de leer la
+                    documentacion) y ahora si amigo preparate para tener unas animaciones bonitas :D</p>
+                <div class="scroll" id="lab-scroll-anim">
+                    <figure class="picture">
+                        <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="laboratory">
                     </figure>
                 </div>
-                <div id="panel2">
-                    <h3>Fotografia 2</h3>
-                    <figure class="f_picture">
-                        <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="">
-                    </figure>
-                </div>
-                <div id="panel3">
-                    <h3>Fotografia 3</h3>
-                    <figure class="f_picture">
-                        <img class="picture" src="library/pictures/laboratory/picture3.jpg" alt="">
-                    </figure>
-                </div>
-                <div id="buttons">
-                    <button class="button" id="b-panel1">Panel 1</button>
-                    <button class="button" id="b-panel2">Panel 2</button>
-                    <button class="button" id="b-panel3">Panel 3</button>
-                </div>
             </div>
-        </div>
-
-        <div class="lab-container">
-            <h3>Seccion con Scroll</h3>
-            <p>A continuacion lo que llamo, hacer un seccion scrolleable por que quiero que el div se mantenga en un
-                tamaño grande, que obviamente en la version de celular se va rallar(estropear) por lo que hago esta
-                alternativa</p>
-            <div class="scroll">
-
-            </div>
-        </div>
-
-        <div class="lab-container">
-            <h3>Animaciones de scroll</h3>
-            <p>¿Estas cansado de que tu pagina web se vea vacias y sin animaciones?, Pues aqui te tengo la solucion
-                amigo, lo unico que tienes que hacer es importar la libreria ScrollReveal.js(Asegurate de leer la
-                documentacion) y ahora si amigo preparate para tener unas animaciones bonitas :D</p>
-            <div class="scroll" id="lab-scroll-anim">
-                <figure class="f_picture">
-                    <img class="picture" src="library/pictures/laboratory/picture2.jpg" alt="laboratory">
-                </figure>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer-lab">

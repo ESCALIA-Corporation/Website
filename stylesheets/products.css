@@ -1,0 +1,97 @@
+:root {
+  --dark-container-border: 0.5px solid #303030;
+  --datk-container-shadow: #ec013825 0 5px 20px -2px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+}
+
+header {
+  background: linear-gradient(180deg, var(--header-background) 10%, transparent);
+}
+
+.header-link {
+  color: var(--link-color);
+}
+
+.header-link:hover {
+  color: var(--link-color-hover);
+}
+
+.welcome {
+  margin: 30px 20px;
+}
+
+.slider-container {
+  position: relative;
+  height: 600px;
+  max-width: auto;
+  margin: 0;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.sli_content {
+  padding: 200px 0 0 80px;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color);
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--color);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.products-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 1400px) {
+  .products-container {
+    margin: 50px 14%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .products-container {
+    margin: 10px 5px;
+  }
+}

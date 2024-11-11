@@ -7,8 +7,8 @@
 
 body {
   background-position: center;
-  background-color: var(--dark-background);
-  color: var(--dark-color);
+  background-color: var(--background);
+  color: var(--color);
 }
 
 .code {
@@ -65,11 +65,11 @@ code:hover {
 }
 
 .header-link {
-  color: var(--dark-color);
+  color: var(--color);
 }
 
 .header-link:hover {
-  color: var(--dark-link-color);
+  color: var(--link-color);
 }
 
 .sidebar {
@@ -109,7 +109,7 @@ code:hover {
   background-color: transparent;
   border: none;
   font-size: 15px;
-  color: var(--dark-color);
+  color: var(--color);
 }
 
 .sub-sidebar-item {
@@ -141,7 +141,7 @@ text-align: center;
   font-size: 15px;
   background: linear-gradient(200deg, #1b009236, #0011ff36);
   border: var(--dark-container-border);
-  color: var(--dark-color);
+  color: var(--color);
 }
 .menu-button:hover {
   background-color: #4042b927;

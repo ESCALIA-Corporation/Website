@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos ESCALIA</title>
+    <link rel="stylesheet" href="stylesheets/products.css" />
+    <link rel="stylesheet" href="stylesheets/template.css" />
+    <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-dark">
+    <header id="header">
+        <a href="index.html">
+            <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
+        </a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="./library/logotype_resourses/accesibility/menu.svg" class="menu-icon" alt="" />
+        </label>
+        <ul class="menu">
+            <li class="item">
+                <button class="header-link" id="themeToggle"></button>
+            </li>
+            <li class="item">
+                <a class="link" href="index.html">
+                    <button class="header-link">Inicio</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="education.html">
+                    <button class="header-link">Tutoriales</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="proyects.html">
+                    <button class="header-link">Proyectos</button></a>
+                <ul class="dropdown">
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Python</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Java</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Javascript</button></a></li>
+                </ul>
+            </li>
+            <li class="item">
+                <a class="link" href="laboratory.html">
+                    <button class="header-link">Laboratorio</button></a>
+            </li>
+            <li class="item">
+                <a class="link" href="about.html">
+                    <button class="header-link">Acerca de</button></a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide" style="background-image: url('library/pictures/slides/slide1.jpg');"></div>
+                <div class="slide" style="background-image: url('library/pictures/slides/slide2.jpg');"></div>
+                <div class="slide" style="background-image: url('library/pictures/slides/slide3.jpg');"></div>
+                <div class="slide" style="background-image: url('library/pictures/slides/slide4.jpg');"></div>
+                <div class="slide" style="background-image: url('library/pictures/slides/slide5.jpg');"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+
+        <section class="products-container">
+            <H1>Otros lugares de ESCALIA</H1>
+
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="about-me">
+            <div class="media-links">
+                <div class="social-link">
+                    <a href="https://www.facebook.com/beofalejandro">
+                        <img src="library/logotype_resourses/footer/facebook-logo.svg" class="social-logo" alt=""></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.instagram.com/beofalejandro/">
+                        <img src="library/logotype_resourses/footer/instagram-logo.svg" class="social-logo" alt=""></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://open.spotify.com/playlist/3SdpLjljM8npoRd6Ret6Xr?si=04bb703b88604d10">
+                        <img src="library/logotype_resourses/footer/spotify-logo.svg" class="social-logo" alt=""></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://github.com/beofalejandro/ESCALIA">
+                        <img src="library/logotype_resourses/footer/github-logo.svg" class="social-logo" alt=""></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/beofalejandro/">
+                        <img src="library/logotype_resourses/footer/linkedin-logo.svg" class="social-logo" alt=""></a>
+                </div>
+            </div>
+            <figure class="f-logo">
+                <a href="#">
+                    <img class="foot-logo" src="library/logotype_resourses/ESCALIA/ESCALIALogo-white.svg"
+                        alt="ESCALIA Logo" />
+                </a>
+            </figure>
+        </div>
+        <div class="privacy-info">
+            <div class="rules">
+                <ul>
+                    <li>Politicas de Seguridad</li>
+                    <li>Condiciones de Uso</li>
+                    <li>Marcas Registradas</li>
+                </ul>
+            </div>
+            <div class="credits">
+                <p>&copy; ESCALIA 2024</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/institute.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

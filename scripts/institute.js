@@ -28,13 +28,6 @@ function prevSlide() {
 }
 setInterval(nextSlide, 25000);
 
-// Change theme
-ButtonMode.addEventListener('click', () => {
-    themeforbody.classList.toggle('body-light');
-    themeforfooter.classList.toggle('footer-light');
-    themeforcontainers.classList.toggle('institute-container-light');
-});
-
 const contenedor = document.getElementById("cont_pan-institute"); //GET THE CONATINER FOR PANELS
 // SET THE DIV's
 const panel1 = document.getElementById("panel-1");

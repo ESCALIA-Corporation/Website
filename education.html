@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educación | ESCALIA Site</title>
-    <link rel="stylesheet" href="stylesheets/education-styleseet.css" />
-    <link rel="stylesheet" href="stylesheets/main_stylesheet.css" />
+    <link rel="stylesheet" href="stylesheets/education.css" />
+    <link rel="stylesheet" href="stylesheets/template.css" />
     <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,8 @@
 <body>
     <header id="header">
         <div class="logo_title">
-            <div> <a href="index.html">
+            <div>
+                <a href="index.html">
                     <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
                 </a>
             </div>
@@ -31,11 +32,14 @@
         </label>
         <ul class="menu">
             <li class="item">
+                <button class="header-link" id="themeToggle"></button>
+            </li>
+            <li class="item">
                 <a class="link" href="index.html">
                     <button class="header-link">Inicio</button></a>
             </li>
             <li class="item">
-                <a class="link" href="proyects.html">
+                <a class="link" href="projects.html">
                     <button class="header-link">Proyectos</button></a>
                 <ul class="dropdown">
                     <li><a class="link" href="#">
@@ -47,8 +51,8 @@
                 </ul>
             </li>
             <li class="item">
-                <a class="link" href="institute.html">
-                    <button class="header-link">Instituto</button></a>
+                <a class="link" href="products.html">
+                    <button class="header-link">Productos</button></a>
             </li>
             <li class="item">
                 <a class="link" href="laboratory.html">
@@ -205,7 +209,6 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/lingard.js"></script>
 </body>
 
 </html>
