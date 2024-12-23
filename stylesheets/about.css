@@ -61,10 +61,84 @@ body {
   padding: 15px 10px 15px 15px;
 }
 
-#escalia_title {
-  padding: 15px;
-  background-color: var(--escalia-background);
-  color: var(--container-background);
+.about-me {
+  
+}
+
+.me-header {
+  padding: 25px;
+  display: flex;
+  border: var(--dark-container-border);
+  gap: 5px;
+  border-radius: 0px;
+}
+
+.me-header > .me-head-sidebar {
+  width: 30%;
+  text-align: center;
+}
+
+.me-header .me-head-sidebar > figure {
+  display: flex;
+  justify-content: center;
+}
+
+.me-header .me-head-sidebar figure img {
+  width: 220px;
+  display: flex;
+  border: var(--dark-container-border);
+  border-radius: 50%;
+}
+
+.skill-value {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-value .value-container {
+  width: 40%;
+  margin: 7px 0;
+  align-content: center;
+  display: flex;
+}
+
+.value {
+  padding: 5px 12px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: var(--dark-container-border);
+}
+
+.active-value {
+  background-color: #22ce55;
+}
+
+.me-header .me-body {
+  width: 70%;
+  padding: 0 20px;
+}
+
+.me-body .me-social {
+  text-align: center;
+}
+
+.me-body .me-social > .media-links {
+  justify-content: center;
+}
+
+.me-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carreer {
+  font-size: 15px;
+  padding: 40px 60px;
+  background-color: #2804491a;
+  border: var(--dark-container-border);
+  color: var(--color);
 }
 
 .workgroup-escalia {

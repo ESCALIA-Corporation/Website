@@ -171,8 +171,8 @@ text-align: center;
 
 footer {
   --s: 77px; /* control the size*/
-  --c1: #310013;
-  --c2: #151515;
+  --c1: #80163e1f;
+  --c2: var(--background);
 
   --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
     var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
