@@ -51,11 +51,6 @@ body {
   padding: 30px;
 }
 
-.con_tit_escalia {
-  display: flex;
-  justify-content: center;
-  padding: 80px 0;
-}
 
 #title {
   padding: 15px 10px 15px 15px;
@@ -186,17 +181,17 @@ body {
   justify-content: center;
 }
 
-.version-info-content {
-  background-color: var(--container-background);
+.ver-info-container {
   margin: 2% 0;
-  padding: 2%;
-  border-radius: 8px;
+  padding: 1%;
+  border-radius: 5px;
+  border: var(--dark-container-border);
 }
 
-.version-info-content h2 {
+.ver-info-container h2 {
   font-weight: bolder;
-  background: linear-gradient(120deg, #992bff, rgb(255, 59, 140));
-  background-size: 400px 100px;
+  background: linear-gradient(120deg, #41adf5, #fd4573);
+  background-size: 500px 100px;
   background-clip: inherit;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -210,6 +205,13 @@ body {
 
 .ver-inf-commit-container {
   padding: 2% 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .about-container
+  {
+    margin: 4% 14%;
+  }
 }
 
 @media screen and (max-width: 800px) {

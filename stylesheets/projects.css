@@ -60,23 +60,22 @@ h1 {
   display: flex;
   align-items: center;
   margin: 10px;
-  padding: 1%;
+  padding: 2% 0.5%;
   width: 32%;
   min-width: 32%;
   border-radius: 5px;
   font-weight: 15px;
   gap: 3px;
-  background-color: var(--container-background);
   border: var(--dark-container-border);
   box-shadow: var(--datk-container-shadow);
 }
 
 .slide_picture_container {
-  width: 30%;
+  width: 35%;
 }
 
 .proj_slide_description {
-  width: 70%;
+  width: 65%;
 }
 
 .slide_picture {
@@ -102,6 +101,7 @@ h1 {
 
 .pro_content {
   margin: 5% 3%;
+  padding: 0.5% 0;
   display: flex; /*flex*/
   gap: 5px;
 }
@@ -143,7 +143,7 @@ h1 {
 }
 
 @media screen and (min-width: 1400px) {
-  .pro_content {
+  .content {
     margin: 5% 14%;
     justify-content: center;
   }

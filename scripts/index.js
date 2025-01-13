@@ -1,6 +1,7 @@
 window.sr = ScrollReveal();
 
-// TODO: Hacer que cambie de tema como en el apartado de instituto
+
+//TODO: Cambiar variables, ya que son ambiguos
 
 
 // PANELS WITH JS
