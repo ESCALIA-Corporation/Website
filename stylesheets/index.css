@@ -18,6 +18,7 @@
 body {
   color: var(--color);
   background-color: var(--container-background);
+  overflow-x: hidden; /* Oculta el scroll horizontal */
 }
 
 .container {
@@ -125,7 +126,7 @@ body {
   gap: 15px;
 }
 
-.proyect-card {
+.project-card {
   display: flex;
   padding: 20px 10px;
   width: 49%;
@@ -134,8 +135,13 @@ body {
   border-radius: var(--global-container-border);
 }
 
+.project-image{
+  height: 90px;
+  width: 100%;
+}
+
 .tags-container {
-  padding: 0 0 15px 0;
+  padding: 0 0 5px 0;
 }
 
 .slide_picture_container {
@@ -187,7 +193,7 @@ body {
 }
 
 #letter-escalante {
-  color: yellowgreen;
+  color: rgb(196, 108, 255);
 }
 
 #letter-escalia {
@@ -195,11 +201,11 @@ body {
 }
 
 #letter-lingard {
-  color: cyan;
+  color: rgb(102, 130, 255);
 }
 
 #letter-barrientos {
-  color: gold;
+  color: rgb(159, 255, 114);
 }
 
 .happy-bite-collection {
@@ -235,13 +241,37 @@ body {
 }
 
 .article > .content-article {
-  width: 90%;
+  width: 89%;
+  text-align: left;
 }
 
 .article > .controls {
   width: 10%;
   text-align: center;
   align-content: center;
+}
+
+.article-body{
+  padding: 5px 0;
+  text-align: justify;
+}
+
+.other-sites {
+  text-align: center;
+  display: flex;
+}
+
+.other-sites > figure {
+  width: 40%;
+  background: linear-gradient(110deg, #52171744, #61602642);
+  padding: 2%;
+  text-align: center;
+}
+
+.other-site-body {
+  width: 60%;
+  padding: 20px ;
+  text-align: left;
 }
 
 @media screen and (min-width: 1400px) {
@@ -286,26 +316,26 @@ body {
     display: inline;
   }
 
-  .proyect-card {
+  .project-card, .learning {
     margin: 10px 25px;
     width: auto;
   }
 
-  .learning {
-    margin: 10px 25px;
-  }
-
   .article {
-    display: inline;
+    display: block;
     width: 100%;
     text-align: center;
   }
 
-  .article > .content-article {
+  .content-article, .controls {
     width: 100%;
   }
 
-  .article > .controls {
+  .other-sites {
+    display: block;
+  }
+
+  .other-sites > figure, .other-site-body {
     width: 100%;
   }
 }

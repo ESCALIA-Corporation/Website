@@ -31,16 +31,17 @@
 }
 
 [data-theme="light"] {
-  --background: #e6d9ec;
-  --container-background: #e6d9ec;
+  --background: #dfe8eb;
+  --container-background: #dfe8eb;
   --color: #000000;
   --button-color: #a4031f;
   --link-color: #000000;
-  --link-color-hover: #FFFFFF;
-  --header-background: #9148e4;
+  --link-color-hover: #02ad82;
+  --header-background: linear-gradient( 120deg,#ebd8e3f6 0%,#dfe8eb 100%);
 
-  --tag-background: #9d68da;
+  --tag-background: #23fac4;
   --tag-color: #190529;
+
 }
 
 /* --- HEADER STYLES --- */
@@ -99,6 +100,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: auto;
+}
+
+.menu-logo {
+  color: var(--color);
 }
 
 #menu {
@@ -217,6 +222,15 @@ footer .about-me {
 
 .social-logo {
   display: flex;
+}
+
+.social-logo > img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-logo {
+  color: var(--color);
 }
 
 .f-logo {

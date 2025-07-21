@@ -4,9 +4,10 @@ const headerlinks = header.querySelectorAll('.header-link');
 window.addEventListener('scroll', () => {
     var scroll = window.scrollY
     if (scroll > 15) {
-        header.style.backgroundColor = 'var(--header-background)'
+        header.style.background = 'var(--header-background)'
     } else {
         header.style.backgroundColor = 'transparent'
+        header.style.background = 'transparent'
     }
 });
 

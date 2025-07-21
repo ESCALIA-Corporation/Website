@@ -5,14 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="jxsNYaYexEYAO6rML_X25AjsVwrg04iAzk_HkpSbo0g" />
+    <meta name="description"
+        content="Portafolio personal de Alejandro Barrientos, estudiante entusiasta y apasionado por el aprendizaje, desarrollo web y seguridad informática.">
+    <meta name="keywords"
+        content="portafolio, estudiante, aprendizaje, desarrollo web, entusiasta, seguridad informática, Escalia, Alejandro Barrientos Escalante, beofalejandro">
+    <meta name="author" content="Escalia">
+    <meta name="robots" content="index">
     <title>Pagina Principal | ESCALIA Site</title>
-    <link rel="stylesheet" href="stylesheets/index.css" />  
+    <link rel="stylesheet" href="stylesheets/index.css" />
     <link rel="stylesheet" href="stylesheets/template.css" />
     <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <script src="scripts/libaries/scrollreveal.js"></script>
+    <link rel="canonical" href="https://escalia-corporation.github.io/Website/">
 </head>
 
 <body>
@@ -21,15 +28,14 @@
         <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
         <input type="checkbox" id="menu" />
         <label for="menu">
-            <img src="./library/logotype_resourses/accesibility/menu.svg" class="menu-icon" alt="" />
+            <svg class="menu-logo" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px">
+                <path fill="currentColor" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
         </label>
         <ul class="menu">
             <li class="item">
                 <button class="header-link" id="themeToggle"></button>
-            </li>
-            <li class="item">
-                <a class="link" href="education.html">
-                    <button class="header-link">Tutoriales</button></a>
             </li>
             <li class="item">
                 <a class="link" href="projects.html">
@@ -75,12 +81,12 @@
         </div>
     </section>
 
-    <main class="content content-dark">
+    <main class="content">
         <section class="cards">
             <div class="cards-container">
                 <div class="card">
                     <img src="library/pictures/cat_cards.jpg" class="card-picture" />
-                    <h3>Laboratorio Beta</h3>
+                    <h3>Laboratorio</h3>
                     <p>Aqui podras encontrar avances de la pagina web o incluso pruebas de proximas cosas que quiero
                         implementar en la misma</p>
                     <a href="laboratory.html">
@@ -89,7 +95,7 @@
                 </div>
                 <div class="card">
                     <img src="library/pictures/cat_cards.jpg" class="card-picture" />
-                    <h3>Mis Proyectos</h3>
+                    <h3>Proyectos</h3>
                     <p>Aqui estaran proyectos creados por mi asi como el codigo fuente y tratare de hacer que se puedan
                         ejecutar aqui</p>
                     <a href="projects.html">
@@ -118,9 +124,12 @@
         </section>
 
         <section class="proyects-cards-container container">
-            <div class="proyect-card">
+            <div class="project-card">
                 <figure><img src="" alt=""></figure>
                 <div>
+                    <div class="project-image">
+
+                    </div>
                     <div class="tags-container">
                         <button class="tag">Latest Proyect</button>
                         <button class="tag">Docker</button>
@@ -130,9 +139,12 @@
                     <p>Nueva aplicaion de python con flask servida con docker para una facil administracion</p>
                 </div>
             </div>
-            <div class="proyect-card">
+            <div class="project-card">
                 <figure><img src="" alt=""></figure>
                 <div>
+                    <div class="project-image">
+
+                    </div>
                     <div class="tags-container">
                         <button class="tag">Soon Proyect</button>
                         <button class="tag">Winther Collection</button>
@@ -145,19 +157,37 @@
         </section>
 
         <section class="learning">
-            <h2>ESCALIA Learning - Aprendizaje para todos</h2>
+            <h2>Tutoriales - Aprendizaje para todos</h2>
             <div class="article">
                 <div class="content-article">
                     <button class="tag">Github</button>
                     <button class="tag">Principiante</button>
                     <button class="tag">Contenedores y Repositorios</button>
                     <h2>Crear un repositorio en Github</h2>
-                    <br>
-                    <p>Explicacion de como crear un reposiroio en github con comandos de consola git</p>
+                    <div class="article-body">
+                        <p>Explicacion de como crear un reposiroio en github con comandos de consola git</p>
+                    </div>
                 </div>
                 <div class="controls">
-                    <button class="button">Ver</button>
+                    <a href="">
+                        <button class="button">Ver</button>
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <section class="container container-style other-sites">
+            <figure></figure>
+            <div class="other-site-body">
+                <h2>Portafolio de python con flask</h2>
+                <br>
+                <p>Un portafolio de proyectos hecho con python y flask, un proyecto que me ha ayudado a aprender mucho
+                    sobre el desarrollo web y la administracion de servidores</p>
+                <br>
+
+                <a href="https://beofalejandro.pythonanywhere.com/">
+                    <button class="button"> Vamos</button>
+                </a>
             </div>
         </section>
 
@@ -170,6 +200,7 @@
             <p>El evento mas esperado del año para compartir todo lo que he visto en este basto y asombroso mundo, suelo
                 compartir todo lo del año, asi como actualizar este apartado con fotografias de mi vida, <b> 15 dias de
                     celebracion es este maravilloso mundo</b></p>
+            <br>
             <a href="happybitecollection.html">
                 <button class="button" id="hbc-button">Ir</button>
             </a>
@@ -181,7 +212,7 @@
                     <p>ESCALANTE</p>
                 </div>
                 <div id="letter-escalia">
-                    <p>ESCALIA</p>
+                    <p>ALEJANDRO</p>
                 </div>
                 <div id="letter-lingard">
                     <p>LINGARD</p>
@@ -193,7 +224,7 @@
                     <p>ESCALANTE</p>
                 </div>
                 <div id="letter-escalia">
-                    <p>ESCALIA</p>
+                    <p>ALEJANDRO</p>
                 </div>
                 <div id="letter-lingard">
                     <p>LINGARD</p>
@@ -205,7 +236,7 @@
                     <p>ESCALANTE</p>
                 </div>
                 <div id="letter-escalia">
-                    <p>ESCALIA</p>
+                    <p>ALEJANDRO</p>
                 </div>
                 <div id="letter-lingard">
                     <p>LINGARD</p>
@@ -219,10 +250,10 @@
         <section class="long-cards container">
             <div class="long-card">
                 <figure>
-                    <img src="library/logotype_resourses/ESCALIA/ESCALIALogo-white.svg" class="long-card-picture" />
+                    <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="long-card-picture" />
                 </figure>
                 <div>
-                    <h2>¿Que es escalia?, ¿Que hace?, ¿Quienes lo conforman?</h2>
+                    <h2>Conoce mas...</h2>
                     <p>Comensamos siendo una simple pagina web, ahora es una marca, mi propia marca personal que como
                         fin tiene la intension de compartir proyectos, reconociminentos y el compartir de lo que
                         aprendido</p>
@@ -235,29 +266,55 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <div class="about-me">
             <div class="media-links">
                 <div class="social-link">
                     <a href="https://www.facebook.com/beofalejandro">
-                        <img src="library/logotype_resourses/footer/facebook-logo.svg" class="social-logo" alt=""></a>
+                        <svg class="footer-logo" width="25px" height="30px" viewBox="0 0 20 15" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M12.821 19V10h2.732l0.447-4H12.82V4.052C12.82 3.022 12.848 2 14.287 2h1.458V-0.86C15.745-0.903 14.493-1 13.226-1c-2.646 0-4.302 1.657-4.302 4.7L8.923 6H6v4h2.923v9H12.821z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
                 <div class="social-link">
                     <a href="https://www.instagram.com/beofalejandro/">
-                        <img src="library/logotype_resourses/footer/instagram-logo.svg" class="social-logo" alt=""></a>
-                </div>
-                <div class="social-link">
-                    <a href="https://open.spotify.com/playlist/3SdpLjljM8npoRd6Ret6Xr?si=04bb703b88604d10">
-                        <img src="library/logotype_resourses/footer/spotify-logo.svg" class="social-logo" alt=""></a>
+                        <svg class="footer-logo" width="28px" viewBox="-1 -1 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" />
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#FFFFFF" />
+                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="social-link">
                     <a href="https://github.com/ESCALIA-Corporation/Website">
-                        <img src="library/logotype_resourses/footer/github-logo.svg" class="social-logo" alt=""></a>
+                        <svg class="footer-logo" width="28px" viewBox="-3 -2 25 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor"
+                                d="M4.0744 2.9938C4.13263 1.96371 4.37869 1.51577 5.08432 1.15606C5.84357 0.768899 7.04106 0.949072 8.45014 1.66261C9.05706 1.97009 9.11886 1.97635 10.1825 1.83998C11.5963 1.65865 13.4164 1.65929 14.7213 1.84164C15.7081 1.97954 15.7729 1.97265 16.3813 1.66453C18.3814 0.651679 19.9605 0.71795 20.5323 1.8387C20.8177 2.39812 20.8707 3.84971 20.6494 5.04695C20.5267 5.71069 20.5397 5.79356 20.8353 6.22912C22.915 9.29385 21.4165 14.2616 17.8528 16.1155C17.5801 16.2574 17.3503 16.3452 17.163 16.4167C16.5879 16.6363 16.4133 16.703 16.6247 17.7138C16.7265 18.2 16.8491 19.4088 16.8973 20.4002C16.9844 22.1922 16.9831 22.2047 16.6688 22.5703C16.241 23.0676 15.6244 23.076 15.2066 22.5902C14.9341 22.2734 14.9075 22.1238 14.9075 20.9015C14.9075 19.0952 14.7095 17.8946 14.2417 16.8658C13.6854 15.6415 14.0978 15.185 15.37 14.9114C17.1383 14.531 18.5194 13.4397 19.2892 11.8146C20.0211 10.2698 20.1314 8.13501 18.8082 6.83668C18.4319 6.3895 18.4057 5.98446 18.6744 4.76309C18.7748 4.3066 18.859 3.71768 18.8615 3.45425C18.8653 3.03823 18.8274 2.97541 18.5719 2.97541C18.4102 2.97541 17.7924 3.21062 17.1992 3.49805L16.2524 3.95695C16.1663 3.99866 16.07 4.0147 15.975 4.0038C13.5675 3.72746 11.2799 3.72319 8.86062 4.00488C8.76526 4.01598 8.66853 3.99994 8.58215 3.95802L7.63585 3.49882C7.04259 3.21087 6.42482 2.97541 6.26317 2.97541C5.88941 2.97541 5.88379 3.25135 6.22447 4.89078C6.43258 5.89203 6.57262 6.11513 5.97101 6.91572C5.06925 8.11576 4.844 9.60592 5.32757 11.1716C5.93704 13.1446 7.4295 14.4775 9.52773 14.9222C10.7926 15.1903 11.1232 15.5401 10.6402 16.9905C10.26 18.1319 10.0196 18.4261 9.46707 18.4261C8.72365 18.4261 8.25796 17.7821 8.51424 17.1082C8.62712 16.8112 8.59354 16.7795 7.89711 16.5255C5.77117 15.7504 4.14514 14.0131 3.40172 11.7223C2.82711 9.95184 3.07994 7.64739 4.00175 6.25453C4.31561 5.78028 4.32047 5.74006 4.174 4.83217C4.09113 4.31822 4.04631 3.49103 4.0744 2.9938Z" />
+                            <path fill="currentColor"
+                                d="M3.33203 15.9454C3.02568 15.4859 2.40481 15.3617 1.94528 15.6681C1.48576 15.9744 1.36158 16.5953 1.66793 17.0548C1.8941 17.3941 2.16467 17.6728 2.39444 17.9025C2.4368 17.9449 2.47796 17.9858 2.51815 18.0257C2.71062 18.2169 2.88056 18.3857 3.05124 18.5861C3.42875 19.0292 3.80536 19.626 4.0194 20.6962C4.11474 21.1729 4.45739 21.4297 4.64725 21.5419C4.85315 21.6635 5.07812 21.7352 5.26325 21.7819C5.64196 21.8774 6.10169 21.927 6.53799 21.9559C7.01695 21.9877 7.53592 21.998 7.99999 22.0008C8.00033 22.5527 8.44791 23.0001 8.99998 23.0001C9.55227 23.0001 9.99998 22.5524 9.99998 22.0001V21.0001C9.99998 20.4478 9.55227 20.0001 8.99998 20.0001C8.90571 20.0001 8.80372 20.0004 8.69569 20.0008C8.10883 20.0026 7.34388 20.0049 6.67018 19.9603C6.34531 19.9388 6.07825 19.9083 5.88241 19.871C5.58083 18.6871 5.09362 17.8994 4.57373 17.2891C4.34391 17.0194 4.10593 16.7834 3.91236 16.5914C3.87612 16.5555 3.84144 16.5211 3.80865 16.4883C3.5853 16.265 3.4392 16.1062 3.33203 15.9454Z" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="social-link">
                     <a href="https://www.linkedin.com/in/beofalejandro/">
-                        <img src="library/logotype_resourses/footer/linkedin-logo.svg" class="social-logo" alt=""></a>
+                        <svg class="footer-logo" width="28px" viewBox="-2 -3 25 25" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(-180.000000, -7479.000000)">
+                                <g transform="translate(56.000000, 160.000000)">
+                                    <path fill="currentColor"
+                                        d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <figure class="f-logo">
