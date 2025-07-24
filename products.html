@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body-dark">
+<body>
     <header id="header">
         <a href="index.html">
             <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
@@ -27,7 +27,11 @@
         </label>
         <ul class="menu">
             <li class="item">
-                <button class="header-link" id="themeToggle"></button>
+                <label class="header-link" style="display: block !important;">
+                    <input type="checkbox" class="toggle-checkbox" id="themeToggleCheckbox" role="switch"
+                        aria-checked="false">
+                    <div class="toggle-switch"></div>
+                </label>
             </li>
             <li class="item">
                 <a class="link" href="index.html">

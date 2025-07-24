@@ -1,10 +1,10 @@
 # Welcome to the Oficial Website
 
-0.6.7 Stable
+0.7.4 Stable
 
-## Now already in the 0.3.6 Summer Edition 2024
+## Now already in the 0.7.4 Summer Edition 2025
 
-Welcome to my personal porfolio, lots for ideas awaiting be create in this repository, or not hahaha!
+In this update we added a new page, improved the site styles, and optimized the backend for better performance.
 
 ## Next Changes awaiting
 

@@ -26,14 +26,6 @@ body {
   width: 50%;
 }
 
-/*.pro-welcome {
-  background-image: linear-gradient(130deg, #000000d8 40%, #0000002a 100%),
-    url(../library/pictures/background/projects_bg.jpg);
-  background-size: cover;
-  padding: 13% 5%;
-  color: var(--color);
-}*/
-
 .pro_wel_title {
   text-align: end;
 }

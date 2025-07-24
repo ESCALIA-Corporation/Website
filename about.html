@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Conoce a Alejandro Barrinetos Escalante fundador de ESCALIA, estudiante entusiasta y apasionado por el aprendizaje y el desarrollo web">
-    <meta name="keywords" content="portafolio, estudiante, aprendizaje, desarrollo web, entusiasta, proyectos, Escalia, curriculum, cv , acerca de , Alejandro Barrientos Escalante, beofalejandro">
+    <meta name="description"
+        content="Conoce a Alejandro Barrinetos Escalante fundador de ESCALIA, estudiante entusiasta y apasionado por el aprendizaje y el desarrollo web">
+    <meta name="keywords"
+        content="portafolio, estudiante, aprendizaje, desarrollo web, entusiasta, proyectos, Escalia, curriculum, cv , acerca de , Alejandro Barrientos Escalante, beofalejandro">
     <meta name="author" content="Escalia">
     <meta name="robots" content="about">
     <title>Acerca de | ESCALIA Site</title>
@@ -32,7 +34,11 @@
         </label>
         <ul class="menu">
             <li class="item">
-                <button class="header-link" id="themeToggle"></button>
+                <label class="header-link" style="display: block !important;">
+                    <input type="checkbox" class="toggle-checkbox" id="themeToggleCheckbox" role="switch"
+                        aria-checked="false">
+                    <div class="toggle-switch"></div>
+                </label>
             </li>
             <li class="item">
                 <a class="link" href="index.html">
@@ -51,18 +57,14 @@
                 </ul>
             </li>
             <li class="item">
-                <a class="link" href="products.html">
-                    <button class="header-link">Productos</button></a>
-            </li>
-            <li class="item">
-                <a class="link" href="laboratory.html">
-                    <button class="header-link">Laboratorio</button></a>
+                <a class="link" href="news.html">
+                    <button class="header-link">Novedades</button></a>
             </li>
         </ul>
     </header>
 
     <main class="about-container">
-        <button class="tag">0.6.6 – January Update</button>
+        <button class="tag">0.7.0 – Summer 2025 Collection</button>
         <br><br><br><br>
         <section class="about-me">
             <div class="me-header">
@@ -117,15 +119,17 @@
                     <div class="me-head-sidebar">
                         <h2>Acerca de mi</h2>
                         <br>
-                        <p>Soy un desarrollador web con experiencia en HTML, CSS y JavaScript. Me apasiona crear sitios
-                            web interactivos y atractivos. Tengo habilidades en el diseño gráfico y la usabilidad, lo
-                            que me permite crear interfaces intuitivas y agradables para los usuarios. Estoy buscando
-                            oportunidades emocionantes para aplicar mis habilidades y contribuir al éxito de un equipo
-                            de desarrollo. </p>
+                        <p>Estudiante motivado y capacitado con experiencia práctica en el desarrollo web de pila
+                            completa, diseño de bases de datos (SQL/NoSQL) y aplicaciones de escritorio en C#.
+                            Competente en tecnologías web modernas y computación en la nube, con un fuerte enfoque en
+                            soluciones innovadoras centradas en el usuario. Jugador de equipo eficaz con sólidas
+                            habilidades para resolver problemas y la capacidad de ofrecer resultados de calidad bajo
+                            presión. Gran interés en impulsar cambios positivos dentro de las organizaciones y en
+                            mejorar continuamente las habilidades técnicas y colaborativas.</p>
                         <br>
                         <h2>Habilidades</h2>
                         <ul class="skills">
-                            <li class="skill-value">Git (Principiante)<div class="value-container">
+                            <li class="skill-value">Git<div class="value-container">
                                     <button class="value active-value"></button>
                                     <button class="value active-value"></button>
                                     <button class="value"></button>
@@ -133,7 +137,7 @@
                                     <button class="value"></button>
                                 </div>
                             </li>
-                            <li class="skill-value">Github (Principiante)<div class="value-container">
+                            <li class="skill-value">Github<div class="value-container">
                                     <button class="value active-value"></button>
                                     <button class="value active-value"></button>
                                     <button class="value"></button>
@@ -151,7 +155,16 @@
                         <br>
                         <h2>Idiomas</h2>
                         <ul class="skills">
-                            <li class="skill-value">Ingles A1 (no certificado)
+                            <li class="skill-value">Espanol - Nativo
+                                <div class="value-container">
+                                    <button class="value active-value"></button>
+                                    <button class="value active-value"></button>
+                                    <button class="value active-value"></button>
+                                    <button class="value active-value"></button>
+                                    <button class="value active-value"></button>
+                                </div>
+                            </li>
+                            <li class="skill-value">Ingles - A2
                                 <div class="value-container">
                                     <button class="value active-value"></button>
                                     <button class="value"></button>
@@ -160,13 +173,6 @@
                                     <button class="value"></button>
                                 </div>
                             </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
                         </ul>
                     </div>
                     <div class="me-body">
@@ -174,17 +180,56 @@
                         <br>
                         <ul>
                             <li>
-                                <h3>Desarrollador Web Backend con PHP | ITSOEH</h3>
-                                <em>Fecha: Enero 2024 - Presente</em>
-                                <p>Descripción: Diseño y desarollo de un aplicacion web para la administracion de
-                                    asesorias cadamicas usando las tecnologias de HTML, CSS, Javascript, PHP Y SQL</p>
+                                <div class="head-work-container">
+                                    <div>
+                                        <h3>LABEYAT | Desarrollador Front-end & Back-end</h3>
+                                    </div>
+                                    <div><em>Enero 2025 - Junio 2025</em></div>
+                                </div>
+                                <p>Desarrollé una aplicación de escritorio utilizando Windows Forms y C# para mejorar
+                                    una solución para empresas que buscan optimizar la administración de herramientas y
+                                    maquinaria, asegurando que la empresa pudiera acceder rápidamente a los datos sobre
+                                    su equipo.</p>
                             </li>
                             <br>
                             <li>
-                                <h3>Desarrollador Web Backend con Javascript | ITSOEH</h3>
-                                <em>Fecha: Junio 2024 - Dicienmbre 2024</em>
-                                <p>Descripción: Desarollo de una aplicaion web de comercio electronico con tecnologias
-                                    como HTML, Bootstrap, Git, Javascript y API's</p>
+                                <div class="head-work-container">
+                                    <div>
+                                        <h3>ITSOEH | Full Stack Developer</h3>
+                                    </div>
+                                    <div><em>Junio 2024 - Dicienmbre 2024</em></div>
+                                </div>
+                                <p>Desarrollé y desplegué una plataforma de monitoreo en tiempo real basado en la web
+                                    utilizando tecnologías modernas (HTML/CSS, JavaScript, Flask, paho-mqtt y socketio)
+                                    para facilitar el monitoreo a través de un protocolo MQTT seguro y lo desplegué en
+                                    línea para garantizar la accesibilidad del usuario final.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="head-work-container">
+                                    <div>
+                                        <h3>ITSOEH | Desarrollador Front-end & Back-end</h3>
+                                    </div>
+                                    <div><em>Junio 2024 - Enero 2025</em></div>
+                                </div>
+                                <p>Diseñé y desarrollé interfaces de usuario utilizando HTML/CSS, JavaScript, e integré
+                                    estas con SQL Server. Desarrollamos una herramienta administrativa basada en web
+                                    utilizando PHP para optimizar la gestión de bases de datos para el personal,
+                                    mejorando la eficiencia operativa y la accesibilidad.</p>
+                            </li>
+                            <br>
+                            <li>
+                                <div class="head-work-container">
+                                    <div>
+                                        <h3>ITSOEH | Team Lider & Desarrollador Back-end </h3>
+                                    </div>
+                                    <div><em>Mayo 2024 - Dicienmbre 2024</em></div>
+                                </div>
+                                <p>Dirigí un equipo de desarrolladores en la creación de una aplicación web para la
+                                    transición de negocios locales a eCommerce, gestioné tareas del proyecto, asigné
+                                    responsabilidades y contribuí tanto al desarrollo de HTML/CSS en el front-end como
+                                    al desarrollo en JavaScript en el back-end. Implementé control de versiones y
+                                    colaboración usando GitHub.</p>
                             </li>
                         </ul>
                         <br>
@@ -194,7 +239,7 @@
                         <ul>
                             <li>
                                 <h3>Ingeniería en Tecnologías de la Información y Comunicaciones</h3>
-                                <p>Universidad: Instituto Tecnológico Superior del Occidente del Estado de Hidalgo</p>
+                                <p>Instituto Tecnológico Superior del Occidente del Estado de Hidalgo</p>
                                 <p>Fecha: 2021 - Actualidad</p>
                             </li>
                         </ul>
@@ -203,10 +248,40 @@
                         <h2>Certificaciones</h2>
                         <br>
                         <ul>
-                            <li>
-                                <h3>Ingeniería en Tecnologías de la Información y Comunicaciones</h3>
-                                <p>Universidad: Instituto Tecnológico Superior del Occidente del Estado de Hidalgo</p>
-                                <p>Fecha: 2021 - Actualidad</p>
+                            <li class="creds">
+                                <div class="head-creds-container">
+                                    <div>
+                                        <h3>Github Fundations Certification</h3>
+                                    </div>
+                                    <div>
+                                        <p>Enero - 2025</p>
+                                    </div>
+                                </div>
+                                <p>https://www.credly.com/badges/bab156e7-6a7f-450a-a2d4-51b9b927c3ba</p>
+                            </li>
+                            <li class="creds">
+                                <div class="head-creds-container">
+                                    <div>
+                                        <h3>Google Cloud Computing Fundations Certification</h3>
+                                    </div>
+                                    <div>
+                                        <p>Diciembre - 2024</p>
+                                    </div>
+                                </div>
+                                <p>https://www.credly.com/badges/72235c83-ddff-45c5-bc45-3994d2990093/linked_in_profile
+                                </p>
+                            </li>
+                            <li class="creds">
+                                <div class="head-creds-container">
+                                    <div>
+                                        <h3>Cisco: CCNAv7 Introduction to Networks</h3>
+                                    </div>
+                                    <div>
+                                        <p>Junio - 2023</p>
+                                    </div>
+                                </div>
+                                <p>https://www.credly.com/badges/3ac8d31b-ce00-47bc-9216-61dbd767b87d/linked_in_profile
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -219,68 +294,9 @@
             </div>
         </section>
 
-        <section class="workgroup-escalia">
-            <div>
-                <div class="member_container">
-                    <div class="profile-photo-container">
-                        <img src="library/pictures/ESCALIA-Ã_-Matsumoto-Koko-without-maid-costume-Part-I.png"
-                            class="profile-photo" alt="" />
-                    </div>
-                    <div class="profile-info">
-                        <h2>Alejandro Barrientos Escalante (Desarrollador)</h2>
-                        <br>
-                        <p>Actual encargado en en desarollo de esta pagina web, actualmente estudio para mejorar el
-                            entorno de la misma y espero con ansias encontrarle una aplicativo util y convertirla en
-                            una pagina web dinamica</p>
-                        <div class="media-links">
-                            <a href="https://github.com/beofalejandro/ESCALIA">
-                                <img src="library/logotype_resourses/others/github-logo.svg" class="link-logo"
-                                    alt=""></a>
-                            <a href="https://www.instagram.com/beofalejandro/">
-                                <img src="library/logotype_resourses/others/instagram-logo.svg" class="link-logo"
-                                    alt=""></a>
-                            <a href="https://www.facebook.com/beofalejandro">
-                                <img src="library/logotype_resourses/others/facebook-logo.svg" class="link-logo"
-                                    alt=""></a>
-                            <a href="https://www.linkedin.com/in/beofalejandro/">
-                                <img src="library/logotype_resourses/others/linkedin-logo.svg" class="link-logo"
-                                    alt=""></a>
-                            <a href="cv.html"><button class="button">Mi CV</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="member_container">
-                    <div class="profile-photo-container">
-                        <img src="library/pictures/cat_cards.jpg" class="profile-photo" alt="" />
-                    </div>
-                    <div class="profile-info">
-                        <h2>Alejandro Barrientos Barrientos (Patrocinador)</h2>
-                        <br>
-                        <p>Uno de los Sponsors mas importantes de este sitio web ya que mantienen este sitio estable</p>
-                    </div>
-                </div>
-                <div class="member_container">
-                    <div class="profile-photo-container">
-                        <img src="library/pictures/cat_cards.jpg" class="profile-photo" alt="" />
-                    </div>
-                    <div class="profile-info">
-                        <h2>Ana Lilia Escalante González(Patrocinadora)</h2>
-                        <br>
-                        <p>Que se puede decir, simplemente no podia no poerla aqui</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="ver-info-container">
-            <div class="version-info-title">
-                <div>
-                    <h2>6.6 Estable - Winter Update (Enero 2025)</h2>
-                </div>
-                <div><a href=""><button class="button">Ver versiones anteriores</button></a>
-                </div>
+            <div>
+                <h2>0.7.0 Estable - Summer Collection - Julio 2025</h2>
             </div>
             <div class="ver-inf-commit-container">
                 <div class="ver-inf-commit-description">

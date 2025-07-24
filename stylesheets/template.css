@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Quicksand", "Century Gothic", sans-serif;
+  font-family: "Quicksand", "Comfortaa", sans-serif;
 }
 
 :root {
@@ -28,6 +28,7 @@
 
   --tag-background: #190529;
   --tag-color: #ff87ab;
+  --sotw-background: #210042;
 }
 
 [data-theme="light"] {
@@ -36,12 +37,12 @@
   --color: #000000;
   --button-color: #a4031f;
   --link-color: #000000;
-  --link-color-hover: #02ad82;
+  --link-color-hover: #6df7bd;
   --header-background: linear-gradient( 120deg,#ebd8e3f6 0%,#dfe8eb 100%);
 
-  --tag-background: #23fac4;
+  --tag-background: #6df7bd;
   --tag-color: #190529;
-
+  --sotw-background: #cee1ec;
 }
 
 /* --- HEADER STYLES --- */
@@ -64,7 +65,6 @@ header {
   z-index: 99;
 }
 
-/* --- BODY STYLES --- */
 body {
   height: 100vh;
   position: relative;
@@ -136,9 +136,11 @@ body {
   display: none;
   position: absolute;
   padding: 10px 30px;
-  background-color: var(--header-background);
+  background: var(--header-background);
   min-width: 160px;
   z-index: 3;
+  border-radius: 5px;
+  border: var(--dark-container-border);
 }
 
 .link a:hover {
@@ -156,12 +158,48 @@ body {
   padding: 4% 0;
 }
 
-#mode {
+.toggle-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.toggle-switch {
+  background-color: var(--background);
+  width: 50px; /* Ancho ajustado a 50px */
+  height: 25px; /* Alto ajustado a 25px */
+  border-radius: 12.5px; /* La mitad del alto para que sea ovalado */
+  position: relative;
+  transition: 0.3s;
   cursor: pointer;
-  margin: 0 10px;
-  font-size: 17px;
-  font-weight: bold;
-  color: var(--color);
+}
+
+.toggle-switch::before {
+  content: "";
+  font-weight: 900;
+  background-color: var(--color);
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background);
+  transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--escalia-logo);
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "";
+  left: 28px;
+  color: var(--background);
 }
 
 label {

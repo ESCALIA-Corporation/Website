@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos | ESCALIA Site</title>
-    <link rel="stylesheet" href="stylesheets/projects.css" />
+    <title>Novedades | ESCALIA Site</title>
+    <link rel="stylesheet" href="stylesheets/news.css" />
     <link rel="stylesheet" href="stylesheets/template.css" />
-    <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script src="scripts/libaries/scrollreveal.js"></script>
+    <link rel="canonical" href="https://escalia-corporation.github.io/Website/">
 </head>
 
 <body>
@@ -38,9 +40,18 @@
                 <a class="link" href="index.html">
                     <button class="header-link">Inicio</button></a>
             </li>
+
             <li class="item">
-                <a class="link" href="news.html">
-                    <button class="header-link">Novedades</button></a>
+                <a class="link" href="projects.html">
+                    <button class="header-link">Proyectos</button></a>
+                <ul class="dropdown">
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Python</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Java</button></a></li>
+                    <li><a class="link" href="#">
+                            <button class="header-link link-sub">Javascript</button></a></li>
+                </ul>
             </li>
             <li class="item">
                 <a class="link" href="about.html">
@@ -49,220 +60,93 @@
         </ul>
     </header>
 
-    <div class="pro-welcome">
-        <div class="pro_wel_title">
-            <h1>MIS PROYECTOS EN UN SOLO LUGAR</h1>
-        </div>
-        <br>
-        <div class="pro_wel_summary">
-            <ul class="pro_wel_menu">
-                <li><a href="">
-                        <button class="button">Proyectos en Python</button>
-                    </a>
-                </li>
-                <li><a href="">
-                        <button class="button">Proyectos en Java</button>
-                    </a>
-                </li>
-                <li><a href="">
-                        <button class="button">Proyectos en Javascript</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <main class="content">
-        <h2>PROYECTOS</h2>
-        <br>
-
-        <div class="pro_slides_container">
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>ESCALIA × Asesorias Academicas</h3>
-                    <br>
-                    <button class="button">Ver</button>
-                </div>
-            </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>Calculadora de Enciptacion</h3>
-                    <br>
-                    <button class="button">Ver</button>
-                </div>
-            </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>Scripts: Configuración de Redes</h3>
-                    <br>
-                    <button class="button">Ver</button>
-                </div>
-            </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>ESCALIA × LABEYAT</h3>
-                    <br>
-                    <button class="button">Ver</button>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <section class="projects-container">
-            <div class="pro_content">
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture7.png" class="p-picture pro_picture"
-                            alt="" />
+    <main class="header-news">
+        <section class="slider">
+            <div class="s_slides-container">
+                <div class="s_slide">
+                    <div class="s_slide-content">
+                        <div class="c_slide-title">
+                            <h2>PYTHON WEBSITE</h2>
+                        </div>
+                        <div class="c_slide-body">
+                            <p>Portafolio de python donde tengo varios proyectos y tutoriales</p>
+                            <div class="controls">
+                                <button class="btn-news">Visitar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="pro_description">
-                    <h2>ESCALIA × LABEYAT Aplicacion de Windows Forms</h2>
-                    <p>0.5 Estable - Actualizacion de Diseño</p>
-                    <p>Aplicacion desarollada por visual studio por mi, para escritorio windows forms con conexion a base de datos</p>
-                    <div class="pro_controls">
-                        <a
-                            href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Ver codigo</button></a>
+                    <div class="s_slide_figure">
                         
                     </div>
                 </div>
-            </div>
-
-            <div class="pro_content">
-                <div class="pro_description">
-                    <h2>Calculadora de Enciptacion</h2>
-
-                    <p>1.0 - Already 3 Cryptographic methods</p>
-                    <p>Una plataforma para los metodos de encriptacion esta hecha con python, habra mas versiones ya que
-                        en la escuela me piden mas metodos de encriptacion asi que, esperen la version muy pronto</p>
-                    <div class="pro_controls">
-                        <a href="">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                <div class="s_slide sotw-container">
+                    <div class="s_slide-content">
+                        <div class="c_slide-title">
+                            <h2 class="sotw-word">SOTW</h2>
+                        </div>
+                        <div class="c_slide-body">
+                            <p>Song Of The Week 2025</p>
+                            <div class="controls">
+                                <button class="btn-news">Visitar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s_slide_figure sotw-picture">
+                        <p>SONG</p>
+                        <p>OF</p>
+                        <p>THE</p>
+                        <p>WEEK</p>
                     </div>
                 </div>
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture6.png" class="p-picture pro_picture"
-                            alt="" />
+                <div class="s_slide">
+                    <div class="s_slide-content">
+                        <div class="c_slide-title">
+                            <h2>Bienvenido a nuestro sitio web #3</h2>
+                        </div>
+                        <div class="c_slide-body">
+                            <em>Título del Slide 1</em>
+                            <p>Título del Slide 1</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="pro_content">
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture4.png" class="p-picture pro_picture"
-                            alt="" />
-                    </div>
-                </div>
-                <div class="pro_description">
-                    <h2>ESCALIA × Asesorias Academicas</h2>
-
-                    <p>0.1.3 - Frontend Part i</p>
-                    <p>Una plataforma de asesorias academicas que esta siendo diseñada como servicio social, es de
-                        codigo libre ya que no estoy trabajando bajo contrato y no hay ninguna clausula que me lo
-                        impida, puedes obtener el codigo fuente de este proyecto una vez que este terminado, bueno
-                        auntes de que lo patente el tecnologico como suyo XDN'T, si es que si queda XXDDDN'T</p>
-                    <div class="pro_controls">
-                        <a
-                            href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Open-source en: [10 dias]</button></a>
-                        <button class="button">Descargar en: [10 dias]</button>
+                    <div class="s_slide_figure">
                     </div>
                 </div>
             </div>
-
-            <div class="pro_content">
-                <div class="pro_description">
-                    <h2>Aplicacion Web Estatica con Python y Flask</h2>
-
-                    <p>2.3.4 (laboratory) - Happy Bite Collection</p>
-                    <p>Mi Primer sitio estatico web conla tecnologia de Python integrada, actualmente solo se puede
-                        ejecutar de forma locar por que no tengo un lugar para hostearlo (son caros) por lo que la
-                        version que descargas funciona de forma local, IMPORTANTE: Lee el readme del repositorio para
-                        aprovechar su maximo rendimiento de la aplicacion</p>
-                    <div class="pro_controls">
-                        <a href="https://github.com/beofalejandro/Lingard">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
-                    </div>
-                </div>
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture2.png" class="p-picture pro_picture"
-                            alt="" />
-                    </div>
-                </div>
+            <button class="s_prev-btn">❮</button>
+            <button class="s_next-btn">❯</button>
+            <div class="s_dots-container">
             </div>
-
-            
-
-            <div class="pro_content">
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture1.png" class="p-picture pro_picture"
-                            alt="" />
+        </section>
+        <section class="s_news">
+            <h3>Novedades</h3>
+            <ul>
+                <li>
+                    <p>Nuevo Curso de Microsoft + C# con Certificacion Disponible para estudiantes</p>
+                    <div class="controls">
+                        <a href="https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/"><button
+                                class="button">Conoce mas</button></a>
                     </div>
-                </div>
-                <div class="pro_description">
-                    <h2>Proyectos de Python</h2>
-                    <p>Proximamente - Solo diseño</p>
-                    <p>¿Estas cansado de tener que descargar una aplicacion de escritorio para descargar tus videos?,
-                        Pues aqui te tengo la solucion amigo, lo unico que tienes es que dirigirte a youtube, copiar tu
-                        link de video y dirigirte aqui, y ahora si amigo preparate para tener tus videos favoritos</p>
-                    <div class="pro_controls">
-                        <a
-                            href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                </li>
+                <li>
+                    <p>Conoce n8n: La mejor y facil herramienta de automatizacion hasta el momento</p>
+                    <div class="controls">
+                        <a href="https://n8n.io/"><button class="button">Conoce mas</button></a>
                     </div>
-                </div>
-            </div>
-
-
-            <div class="pro_content">
-                <div class="pro_description">
-                    <h2>ESCALIA Python - Docker Preview</h2>
-
-                    <p>1.1.1 Docker Avaliable - Happy Bite Collection</p>
-                    <p>Una version alternativa para mi sitio web estico de python esta se planea ser la version
-                        definitiva
-                        ya que planeamos desplegarla, por ahora ya esta disponible en dockerhub aqui: [LINK] y esperamos
-                        finalizarla en este año</p>
-                    <div class="pro_controls">
-                        <a href="">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
-                    </div>
-                </div>
-                <div id="pro_cont_picture_1">
-                    <div class="pro_picture">
-                        <img src="library/pictures/proyects/project-picture5.png" class="p-picture pro_picture"
-                            alt="" />
-                    </div>
-                </div>
-            </div>
-
-
-
+                </li>
+                <li>Todo por ahora...</li>
+            </ul>
         </section>
     </main>
 
-
+    <section class="container container-style news">
+        <div class="content">
+            <h2>Contenido Principal</h2>
+            <p>Este es el contenido principal de la página. Aquí puedes agregar información relevante sobre tus proyectos,
+                noticias o cualquier otro tema que desees destacar.</p>
+            <p>Recuerda que puedes personalizar esta sección según tus necesidades y agregar más contenido según sea
+                necesario.</p>
+        </div>
+    </section>
 
     <footer>
         <div class="about-me">
@@ -317,8 +201,7 @@
             </div>
             <figure class="f-logo">
                 <a href="#">
-                    <img class="foot-logo" src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg"
-                        alt="ESCALIA Logo" />
+                    <img class="foot-logo" src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" alt="ESCALIA Logo" />
                 </a>
             </figure>
         </div>
@@ -337,7 +220,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/proyects.js"></script>
+    <script src="scripts/news.js"></script>
 </body>
 
 </html>

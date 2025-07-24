@@ -18,12 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <script src="scripts/libaries/scrollreveal.js"></script>
     <link rel="canonical" href="https://escalia-corporation.github.io/Website/">
 </head>
 
 <body>
-    <!-- HEADER -->
     <header id="header">
         <img src="library/logotype_resourses/ESCALIA/ESCALIALogo.svg" class="logo" alt="ESCALIA Logo" />
         <input type="checkbox" id="menu" />
@@ -35,7 +33,11 @@
         </label>
         <ul class="menu">
             <li class="item">
-                <button class="header-link" id="themeToggle"></button>
+                <label class="header-link" style="display: block !important;">
+                    <input type="checkbox" class="toggle-checkbox" id="themeToggleCheckbox" role="switch"
+                        aria-checked="false">
+                    <div class="toggle-switch"></div>
+                </label>
             </li>
             <li class="item">
                 <a class="link" href="projects.html">
@@ -50,12 +52,8 @@
                 </ul>
             </li>
             <li class="item">
-                <a class="link" href="products.html">
-                    <button class="header-link">Productos</button></a>
-            </li>
-            <li class="item">
-                <a class="link" href="laboratory.html">
-                    <button class="header-link">Laboratorio</button></a>
+                <a class="link" href="news.html">
+                    <button class="header-link">Novedades</button></a>
             </li>
             <li class="item">
                 <a class="link" href="about.html">
