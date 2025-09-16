@@ -47,7 +47,7 @@ body {
 
 .s_slides-container {
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 
 .s_slide {
@@ -111,16 +111,16 @@ body {
   text-transform: uppercase;
   line-height: 1;
 
-background: linear-gradient(
+  background: linear-gradient(
     to right,
-    #FF0080 0%,    
-    #FFB6C1 15%,  
-    #E6004C 30%,  
-    #FF69B4 50%, 
-    #C71585 70%,  
-    #FF0080 85%,
-    #8B0000 100% 
-);
+    #ff0080 0%,
+    #ffb6c1 15%,
+    #e6004c 30%,
+    #ff69b4 50%,
+    #c71585 70%,
+    #ff0080 85%,
+    #8b0000 100%
+  );
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -128,11 +128,11 @@ background: linear-gradient(
   color: transparent;
 
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
-  -2px -2px 3px rgba(255, 255, 255, 0.1);
+    -2px -2px 3px rgba(255, 255, 255, 0.1);
 }
 
 .s_slide.sotw-container {
-  height: 400px;
+  height: 500px;
   width: auto;
   position: relative;
   background-color: var(--sotw-background);
@@ -311,8 +311,6 @@ background: linear-gradient(
   padding: 20px;
 }
 
-
-
 .s_prev-btn,
 .s_next-btn {
   position: absolute;
@@ -324,7 +322,7 @@ background: linear-gradient(
   padding: 100% 10px;
   cursor: pointer;
   font-size: 20px;
-  z-index: 100;
+  z-index: 1;
   transition: background-color 0.2s ease;
 }
 
@@ -393,10 +391,24 @@ background: linear-gradient(
   background-color: var(--container-background);
 }
 
-
-
 @media screen and (min-width: 1400px) {
   .container {
     margin: 50px 14%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-news {
+    padding: 0;
+    display: block;
+    gap: 3px;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .s_news {
+    width: 100% !important;
   }
 }
