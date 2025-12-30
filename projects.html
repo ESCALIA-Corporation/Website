@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos | ESCALIA Site</title>
+    <title>Projects | ESCALIA Site</title>
     <link rel="stylesheet" href="stylesheets/projects.css" />
     <link rel="stylesheet" href="stylesheets/template.css" />
     <link rel="Icon" href="library/logotype_resourses/ESCALIA/ESCALIALogoCA.svg" />
@@ -36,36 +36,36 @@
             </li>
             <li class="item">
                 <a class="link" href="index.html">
-                    <button class="header-link">Inicio</button></a>
+                    <button class="header-link">Home</button></a>
             </li>
             <li class="item">
                 <a class="link" href="news.html">
-                    <button class="header-link">Novedades</button></a>
+                    <button class="header-link">News</button></a>
             </li>
             <li class="item">
                 <a class="link" href="about.html">
-                    <button class="header-link">Acerca de</button></a>
+                    <button class="header-link">About</button></a>
             </li>
         </ul>
     </header>
 
     <div class="pro-welcome">
         <div class="pro_wel_title">
-            <h1>MIS PROYECTOS EN UN SOLO LUGAR</h1>
+            <h1>MY PROJECTS IN ONE PLACE</h1>
         </div>
         <br>
         <div class="pro_wel_summary">
             <ul class="pro_wel_menu">
                 <li><a href="">
-                        <button class="button">Proyectos en Python</button>
+                        <button class="button">Programing Projects</button>
                     </a>
                 </li>
                 <li><a href="">
-                        <button class="button">Proyectos en Java</button>
+                        <button class="button">Cybersecurity Projects</button>
                     </a>
                 </li>
                 <li><a href="">
-                        <button class="button">Proyectos en Javascript</button>
+                        <button class="button">IoT Projects</button>
                     </a>
                 </li>
             </ul>
@@ -73,48 +73,54 @@
     </div>
 
     <main class="content">
-        <h2>PROYECTOS</h2>
         <br>
+        <h2>Highlights</h2>
 
-        <div class="pro_slides_container">
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>ESCALIA × Asesorias Academicas</h3>
-                    <br>
-                    <button class="button">Ver</button>
-                </div>
+        <div class="slider-wrapper">
+            <div class="slider-controls">
+                <button class="prev-btn" onclick="scrollSlider(-1)">&#10094;</button>
+                <button class="next-btn" onclick="scrollSlider(1)">&#10095;</button>
             </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>Calculadora de Enciptacion</h3>
-                    <br>
-                    <button class="button">Ver</button>
+            <div class="pro_slides_container" id="slider">
+                <div class="pro_slide">
+                    <figure class="slide_picture_container">
+                        <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
+                    </figure>
+                    <div class="proj_slide_description">
+                        <h3>ESCALIA × Academic Advising</h3>
+                        <br>
+                        <button class="button">View</button>
+                    </div>
                 </div>
-            </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>Scripts: Configuración de Redes</h3>
-                    <br>
-                    <button class="button">Ver</button>
+                <div class="pro_slide">
+                    <figure class="slide_picture_container">
+                        <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
+                    </figure>
+                    <div class="proj_slide_description">
+                        <h3>Encryption Calculator</h3>
+                        <br>
+                        <button class="button">View</button>
+                    </div>
                 </div>
-            </div>
-            <div class="pro_slide">
-                <figure class="slide_picture_container">
-                    <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
-                </figure>
-                <div class="proj_slide_description">
-                    <h3>ESCALIA × LABEYAT</h3>
-                    <br>
-                    <button class="button">Ver</button>
+                <div class="pro_slide">
+                    <figure class="slide_picture_container">
+                        <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
+                    </figure>
+                    <div class="proj_slide_description">
+                        <h3>Scripts: Network Configuration</h3>
+                        <br>
+                        <button class="button">View</button>
+                    </div>
+                </div>
+                <div class="pro_slide">
+                    <figure class="slide_picture_container">
+                        <img src="library/pictures/proyects/project-picture.jpg" class="slide_picture" alt="">
+                    </figure>
+                    <div class="proj_slide_description">
+                        <h3>ESCALIA × LABEYAT</h3>
+                        <br>
+                        <button class="button">View</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,29 +135,29 @@
                     </div>
                 </div>
                 <div class="pro_description">
-                    <h2>ESCALIA × LABEYAT Aplicacion de Windows Forms</h2>
-                    <p>0.5 Estable - Actualizacion de Diseño</p>
-                    <p>Aplicacion desarollada por visual studio por mi, para escritorio windows forms con conexion a base de datos</p>
+                    <h2>ESCALIA × LABEYAT Windows Forms Application</h2>
+                    <p>0.5 Stable - Design Update</p>
+                    <p>Application developed by me using Visual Studio for Windows Forms desktop with database
+                        connection</p>
                     <div class="pro_controls">
-                        <a
-                            href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Ver codigo</button></a>
-                        
+                        <a href="https://github.com/ESCALIA-Corporation/LABEYAT">
+                            <button class="button">View code</button></a>
+
                     </div>
                 </div>
             </div>
 
             <div class="pro_content">
                 <div class="pro_description">
-                    <h2>Calculadora de Enciptacion</h2>
+                    <h2>Encryption Calculator</h2>
 
                     <p>1.0 - Already 3 Cryptographic methods</p>
-                    <p>Una plataforma para los metodos de encriptacion esta hecha con python, habra mas versiones ya que
-                        en la escuela me piden mas metodos de encriptacion asi que, esperen la version muy pronto</p>
+                    <p>A platform for encryption methods made with Python, there will be more versions since at school
+                        they ask me for more encryption methods so, expect the version very soon</p>
                     <div class="pro_controls">
-                        <a href="">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                        <a href="https://github.com/beofalejandro/Calculadora-de-Encriptacion">
+                            <button class="button">View code</button></a>
+                        <button class="button">Download (Soon)</button>
                     </div>
                 </div>
                 <div id="pro_cont_picture_1">
@@ -170,35 +176,34 @@
                     </div>
                 </div>
                 <div class="pro_description">
-                    <h2>ESCALIA × Asesorias Academicas</h2>
+                    <h2>ESCALIA × Academic Advising</h2>
 
                     <p>0.1.3 - Frontend Part i</p>
-                    <p>Una plataforma de asesorias academicas que esta siendo diseñada como servicio social, es de
-                        codigo libre ya que no estoy trabajando bajo contrato y no hay ninguna clausula que me lo
-                        impida, puedes obtener el codigo fuente de este proyecto una vez que este terminado, bueno
-                        auntes de que lo patente el tecnologico como suyo XDN'T, si es que si queda XXDDDN'T</p>
+                    <p>An academic advising platform that is being designed as social service, it is open source since I
+                        am not working under contract and there is no clause that prevents me, you can get the source
+                        code of this project once it is finished, well before the technological institute patents it as
+                        theirs XDN'T, if it does XXDDDN'T</p>
                     <div class="pro_controls">
-                        <a
-                            href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Open-source en: [10 dias]</button></a>
-                        <button class="button">Descargar en: [10 dias]</button>
+                        <a href="https://github.com/ESCALIA-Corporation/Plataforma-educativa">
+                            <button class="button">View</button></a>
+                        <button class="button">Download</button>
                     </div>
                 </div>
             </div>
 
             <div class="pro_content">
                 <div class="pro_description">
-                    <h2>Aplicacion Web Estatica con Python y Flask</h2>
+                    <h2>Static Web Application with Python and Flask</h2>
 
                     <p>2.3.4 (laboratory) - Happy Bite Collection</p>
-                    <p>Mi Primer sitio estatico web conla tecnologia de Python integrada, actualmente solo se puede
-                        ejecutar de forma locar por que no tengo un lugar para hostearlo (son caros) por lo que la
-                        version que descargas funciona de forma local, IMPORTANTE: Lee el readme del repositorio para
-                        aprovechar su maximo rendimiento de la aplicacion</p>
+                    <p>My first static website with integrated Python technology, currently it can only be run locally
+                        because I don't have a place to host it (they are expensive) so the version you download works
+                        locally, IMPORTANT: Read the repository's readme to maximize the application's performance</p>
+                    aprovechar su maximo rendimiento de la aplicacion</p>
                     <div class="pro_controls">
                         <a href="https://github.com/beofalejandro/Lingard">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                            <button class="button">View code</button></a>
+                        <button class="button">Download (Soon)</button>
                     </div>
                 </div>
                 <div id="pro_cont_picture_1">
@@ -209,7 +214,7 @@
                 </div>
             </div>
 
-            
+
 
             <div class="pro_content">
                 <div id="pro_cont_picture_1">
@@ -219,16 +224,16 @@
                     </div>
                 </div>
                 <div class="pro_description">
-                    <h2>Proyectos de Python</h2>
-                    <p>Proximamente - Solo diseño</p>
-                    <p>¿Estas cansado de tener que descargar una aplicacion de escritorio para descargar tus videos?,
-                        Pues aqui te tengo la solucion amigo, lo unico que tienes es que dirigirte a youtube, copiar tu
-                        link de video y dirigirte aqui, y ahora si amigo preparate para tener tus videos favoritos</p>
+                    <h2>Python Projects</h2>
+                    <p>Coming soon - Design only</p>
+                    <p>Are you tired of having to download a desktop application to download your videos?
+                        Well, here I have the solution for you, all you have to do is go to YouTube, copy your
+                        video link and come here, and now get ready to have your favorite videos</p>
                     <div class="pro_controls">
                         <a
                             href="https://github.com/beofalejandro/ESCALIA/blob/Proyects/Python%20Proyects/Downloader/main.py">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                            <button class="button">View code</button></a>
+                        <button class="button">Download (Soon)</button>
                     </div>
                 </div>
             </div>
@@ -238,15 +243,15 @@
                 <div class="pro_description">
                     <h2>ESCALIA Python - Docker Preview</h2>
 
-                    <p>1.1.1 Docker Avaliable - Happy Bite Collection</p>
-                    <p>Una version alternativa para mi sitio web estico de python esta se planea ser la version
-                        definitiva
-                        ya que planeamos desplegarla, por ahora ya esta disponible en dockerhub aqui: [LINK] y esperamos
+                    <p>1.1.1 Docker Available - Happy Bite Collection</p>
+                    <p>An alternative version for my static Python website, this is planned to be the definitive version
+                        since we plan to deploy it. For now, it is already available on Docker Hub here: [LINK] and we
+                        hope
                         finalizarla en este año</p>
                     <div class="pro_controls">
                         <a href="">
-                            <button class="button">Ver codigo</button></a>
-                        <button class="button">Descargar (Soon)</button>
+                            <button class="button">View code</button></a>
+                        <button class="button">Download (Soon)</button>
                     </div>
                 </div>
                 <div id="pro_cont_picture_1">
@@ -325,9 +330,9 @@
         <div class="privacy-info">
             <div class="rules">
                 <ul>
-                    <li>Politicas de Seguridad</li>
-                    <li>Condiciones de Uso</li>
-                    <li>Marcas Registradas</li>
+                    <li>Security Policies</li>
+                    <li>Terms of Use</li>
+                    <li>Registered Trademarks</li>
                 </ul>
             </div>
             <div class="credits">
@@ -337,7 +342,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/proyects.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 
 </html>

@@ -1,30 +1,48 @@
-# Welcome to the Oficial Website
+# Welcome to the Official Website — My Portfolio
 
-0.7.4 Stable
+Version 0.8.1 (Spring Edition 2026)
 
-## Now already in the 0.7.4 Summer Edition 2025
+This website is my personal portfolio. It showcases my background, skills, projects, writing, and resources I maintain. Below are brief descriptions of each site section.
 
-In this update we added a new page, improved the site styles, and optimized the backend for better performance.
+## Pages and descriptions
 
-## Next Changes awaiting
+- Home  
+    A concise introduction and highlights: featured projects, latest blog posts, and quick links to important sections.
 
-- More content in Institute
-- More Content in documentation
-- Color Themes in the Page
-- Page loading Animation
+- About  
+    Personal bio, professional summary, skills, technologies I use, and a link to a downloadable resume/CV.
 
-this features will be added slowly in the next verision, when? i don´t know
+- Projects  
+    Curated portfolio of completed and in-progress projects with summaries, tech stack, screenshots, and links to repositories or live demos.
 
-## Uncomming in the next version
+- Blog  
+    Articles, tutorials, and notes about development, design, and lessons learned. Sorted by date and topic for easy browsing.
 
-if you have a suggestion or idea to the site to share with us, create a new issue or create a discussion in this repository, thanks for whatch
+- Institute  
+    Learning resources and course-like content I maintain: guides, curated readings, and internal mini-courses or workshops.
 
-- Share this repo
-- Create a issue
-- Initialize a Disccusion
-- Tag me in your repos :),
+- Documentation  
+    Documentation for the site and any public projects or libraries I publish: usage guides, API references, and setup instructions.
 
-See you soon!
+- Themes  
+    Color theme options and preferences for the site. Users can preview and switch between available themes.
+
+- UI & Loading Animations  
+    Visual polish details such as page loading animations and micro-interactions that improve user experience.
+
+- Contact  
+    Ways to reach me: email, social links, and a short contact form or link to open issues/discussions if relevant.
+
+## Contribution & feedback
+
+If you have suggestions or ideas, please:
+- Share the repository
+- Open an issue
+- Start a discussion
+- Tag me in relevant repos or posts
+
+Thank you for visiting — more content and improvements will be added progressively.
 
 ---
-Never Stop to dreaming - Made with 💖 by ESCALIA Studios and Alejandro Barrientos Escalante
+
+Never Stop to dreaming - Made with 💖 by Made with ❤️ by [Alejandro Barrientos Escalante](https://github.com/beofalejandro) and [ESCALIA Corporation](https://github.com/ESCALIA-Corporation)

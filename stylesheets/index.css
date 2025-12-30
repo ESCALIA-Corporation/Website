@@ -157,57 +157,6 @@ body {
   border-radius: var(--global-container-border);
 }
 
-/* SIDER AUTOMATE */
-@keyframes scroll {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translateX(0);
-  }
-
-  100% {
-    -webkit-transform: translate(calc(-200px * 4));
-    transform: translateX(calc(-200px * 4));
-  }
-}
-
-.repo-slider {
-  margin: 1% 0;
-  gap: 0px;
-  overflow: hidden;
-}
-
-.track-slider {
-  display: flex;
-  -webkit-animation: scroll 10s linear infinite;
-  width: calc(200px * 17);
-  animation: scroll 10s linear infinite;
-}
-
-.track-slider > div {
-  width: 200px;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-  padding: 8px 30px;
-  color: var(--light-color);
-}
-
-#letter-escalante {
-  color: rgb(196, 108, 255);
-}
-
-#letter-escalia {
-  color: var(--escalia-background);
-}
-
-#letter-lingard {
-  color: rgb(102, 130, 255);
-}
-
-#letter-barrientos {
-  color: rgb(159, 255, 114);
-}
-
 .happy-bite-collection {
   text-align: center;
   padding: 20px;
