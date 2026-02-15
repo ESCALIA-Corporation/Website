@@ -36,6 +36,7 @@ This website is my personal portfolio. It showcases my background, skills, proje
 ## Contribution & feedback
 
 If you have suggestions or ideas, please:
+
 - Share the repository
 - Open an issue
 - Start a discussion

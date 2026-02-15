@@ -1,72 +1,32 @@
-window.sr = ScrollReveal();
+const textElement = document.querySelector('.highlight-text');
+const words = ["Developer", "Networking", "Cybersecurity"]; // Tus palabras aquí
 
-// PANELS WITH JS
-const contenedor = document.getElementById("repositories-container"); //GET THE CONATINER FOR PANELS
-const panel1 = document.getElementById("repo_pan_1");
-const panel2 = document.getElementById("repo_pan_2");
-const panel3 = document.getElementById("repo_pan_3");
-// SET THE ACTION BUTTONS
-const boton1 = document.getElementById("button_repo_1");
-const boton2 = document.getElementById("button_repo_2");
-const boton3 = document.getElementById("button_repo_3");
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-// SET PANEL1 FOR DEFAULT
-panel1.style.display = "block";
-panel2.style.display = "none";
-panel3.style.display = "none";
+function typeEffect() {
+    const currentWord = words[wordIndex];
 
-boton1.addEventListener("click", () => {
-    panel1.style.display = "block";
-    panel2.style.display = "none";
-    panel3.style.display = "none";
-});
-boton2.addEventListener("click", () => {
-    panel1.style.display = "none";
-    panel2.style.display = "block";
-    panel3.style.display = "none";
-});
-boton3.addEventListener("click", () => {
-    panel1.style.display = "none";
-    panel2.style.display = "none";
-    panel3.style.display = "block";
-});
+    if (isDeleting) {
 
-// ANIMATIONS WITH USER SCROLL
-sr.reveal('.index_title', {
-    duration: 1500,
-    origin: 'bottom',
-    reset: 'true'
-});
+        textElement.textContent = currentWord.substring(0, charIndex--);
+    } else {
+        textElement.textContent = currentWord.substring(0, charIndex++);
+    }
 
-sr.reveal('.cards-container', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '30px',
-});
+    let typeSpeed = isDeleting ? 100 : 200; // Borra rápido (100), escribe normal (200)
 
-sr.reveal('.longest-cards-container', {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '30px',
-});
+    if (!isDeleting && charIndex === currentWord.length + 1) {
+        isDeleting = true;
+        typeSpeed = 2000;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typeSpeed = 500; 
+    }
 
-sr.reveal('.color-palette', {
-    duration: 2000,
-    delay: 200,
-    origin: 'bottom',
-    distance: '30px',
-});
+    setTimeout(typeEffect, typeSpeed);
+}
 
-sr.reveal('.escalia-repositories', {
-    duration: 2000,
-    delay: 200,
-    origin: 'bottom',
-    distance: '30px',
-});
-
-sr.reveal('.happy-bite-collection', {
-    duration: 2000,
-    delay: 200,
-    origin: 'bottom',
-    distance: '30px',
-});
+document.addEventListener('DOMContentLoaded', typeEffect);

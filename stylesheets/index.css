@@ -5,9 +5,10 @@
   --global-container-border: 5px;
 }
 
-:root, [data-theme="dark"] {
-  --title-background-up: #000000de;
-  --title-background-down: #0000009a;
+:root,
+[data-theme="dark"] {
+  --title-background-up: #000000e1;
+  --title-background-down: #000000b4;
 }
 
 [data-theme="light"] {
@@ -17,7 +18,7 @@
 
 body {
   color: var(--color);
-  background-color: var(--container-background);
+  background-color: var(--background);
   overflow-x: hidden; /* Oculta el scroll horizontal */
 }
 
@@ -29,7 +30,6 @@ body {
 .container-style {
   border: var(--dark-container-border);
   box-shadow: var(--datk-container-shadow);
-  background-color: var(--container-background);
 }
 
 .header-link {
@@ -45,16 +45,103 @@ body {
 }
 
 .title {
-  background: linear-gradient(180deg, var(--title-background-up) 1%, var(--title-background-down)),
-    url(/library/pictures/background/index_bg.jpg);
   height: 700px;
   padding: 0 100px;
   align-content: center;
   text-align: center;
+  top: 0;
+  left: 0;
+}
+
+.hero-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.static-text {
+  font-size: 3rem;
+  color: var(--color);
+  font-weight: 700;
+}
+
+.highlight-text {
+  color: var(--escalia-logo);
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: var(--escalia-logo);
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.mesh-container-elegant {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+
+  overflow: hidden;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+.mesh-shape {
+  position: absolute;
+  border-radius: 50%;
+
+  filter: blur(150px);
+  opacity: 0.25;
+
+  animation: floatMesh 25s infinite alternate ease-in-out;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.shape-cyan {
+  width: 800px;
+  height: 800px;
+  background: #24a5ac;
+  top: -200px;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.shape-purple {
+  width: 900px;
+  height: 900px;
+  background: #6200ea;
+  bottom: -350px;
+  right: -250px;
+  animation-delay: -7s;
+}
+
+.shape-pink {
+  width: 700px;
+  height: 700px;
+  background: #ff0055;
+  top: 30%;
+  right: 20%;
+  animation-delay: -15s;
+  opacity: 0.2;
 }
 
 .title h1 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 50px;
   font-weight: lighter;
 }
@@ -72,24 +159,38 @@ body {
 
 .card {
   margin: 15px;
-  padding: 0 0 15px 0;
-  width: 270px;
+  width: 280px;
   display: inline-block;
   border-radius: var(--global-container-border);
-  text-align: center;
   cursor: default;
   border: var(--dark-container-border);
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  text-align: left;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(255, 0, 85, 0.5); /* El borde se pone Cyan */
+  box-shadow: 0 10px 30px -10px rgba(255, 0, 119, 0.2);
 }
 
 .card p {
   font-size: 15px;
-  padding: 7px 7px 15px;
+  padding: 7px 0 15px 0;
 }
 
-.card-picture {
+.card-icon {
   padding: 0 0 15px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 5px 0;
   width: 100%;
+  font-size: 45px;
 }
 
 .long-card {
@@ -135,7 +236,7 @@ body {
   border-radius: var(--global-container-border);
 }
 
-.project-image{
+.project-image {
   height: 90px;
   width: 100%;
 }
@@ -200,7 +301,7 @@ body {
   align-content: center;
 }
 
-.article-body{
+.article-body {
   padding: 5px 0;
   text-align: justify;
 }
@@ -219,7 +320,7 @@ body {
 
 .other-site-body {
   width: 60%;
-  padding: 20px ;
+  padding: 20px;
   text-align: left;
 }
 
@@ -236,6 +337,16 @@ body {
   .title {
     padding: 0 10px;
     text-align: center;
+  }
+
+  .hero-title-container {
+    width: 100%;
+  }
+
+  .static-text {
+    font-size: 1.8rem;
+    display: inline;
+    align-items: center;
   }
 
   .card {
@@ -265,7 +376,8 @@ body {
     display: inline;
   }
 
-  .project-card, .learning {
+  .project-card,
+  .learning {
     margin: 10px 25px;
     width: auto;
   }
@@ -276,7 +388,8 @@ body {
     text-align: center;
   }
 
-  .content-article, .controls {
+  .content-article,
+  .controls {
     width: 100%;
   }
 
@@ -284,7 +397,8 @@ body {
     display: block;
   }
 
-  .other-sites > figure, .other-site-body {
+  .other-sites > figure,
+  .other-site-body {
     width: 100%;
   }
 }
