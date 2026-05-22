@@ -193,7 +193,7 @@ body {
 }
 
 .toggle-checkbox:checked + .toggle-switch {
-  background-color: var(--escalia-logo);
+  background-color: #303030;
 }
 
 .toggle-checkbox:checked + .toggle-switch::before {

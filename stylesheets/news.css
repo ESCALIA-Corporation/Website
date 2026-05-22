@@ -127,7 +127,8 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent;
 
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3),
+  text-shadow:
+    2px 2px 3px rgba(0, 0, 0, 0.3),
     -2px -2px 3px rgba(255, 255, 255, 0.1);
 }
 
@@ -385,10 +386,24 @@ body {
   border-radius: var(--global-container-border);
 }
 
-.container-style {
+.my-career {
   border: var(--dark-container-border);
   box-shadow: var(--datk-container-shadow);
   background-color: var(--container-background);
+}
+
+.career-container {
+  display: flex;
+  gap: 10px;
+}
+
+.career-space {
+  width: 50%;
+}
+.carrer-body {
+  width: 50%;
+  display: flex;
+  gap: 10px;
 }
 
 @media screen and (min-width: 1400px) {
